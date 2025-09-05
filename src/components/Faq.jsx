@@ -2,98 +2,98 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
-  FaBug,
-  FaShieldAlt,
-  FaLeaf,
+  FaTruckMoving,
+  FaMapMarkedAlt,
+  FaBoxOpen,
   FaPhoneAlt,
 } from "react-icons/fa";
-import bgImage from "../assets/home/fbg.jpg"; // Pest-related clean background
+import bgImage from "../assets/home/abg.jpg"; // Replace with a premium moving-related bg
 
 const faqCategories = {
-  "Pest Control Basics": {
-    icon: <FaBug className="text-[#3CB371] text-xl" />,
+  "Moving Basics": {
+    icon: <FaTruckMoving className="text-[#FFC107] text-xl" />,
     faqs: [
       {
-        question: "What types of pests do you handle?",
+        question: "What types of moves do you handle?",
         answer:
-          "We provide solutions for cockroaches, termites, rodents, mosquitoes, ants, bed bugs, and more. Whether it’s your home, office, or garden, we ensure complete protection.",
+          "We provide local, domestic, and office relocation services, including household shifting, commercial moves, vehicle transport, and secure warehousing.",
       },
       {
-        question: "Are your treatments safe for kids and pets?",
+        question: "Are my belongings safe during the move?",
         answer:
-          "Yes, we use eco-friendly and WHO-approved chemicals that are safe for children, pets, and the environment while being highly effective against pests.",
+          "Absolutely. We use premium packing materials, GPS-enabled vehicles, and experienced staff to ensure your valuables are transported securely.",
       },
       {
-        question: "Do I need to leave home during treatment?",
+        question: "Do you handle fragile or luxury items?",
         answer:
-          "In most cases, it’s not required. However, for certain treatments like bed bugs or heavy fogging, we may advise a short stay outside for safety.",
+          "Yes, we specialize in careful handling of fragile items, antiques, and luxury goods with extra safety packaging.",
       },
     ],
   },
   "Services & Coverage": {
-    icon: <FaShieldAlt className="text-[#3CB371] text-xl" />,
+    icon: <FaMapMarkedAlt className="text-[#FFC107] text-xl" />,
     faqs: [
-      {
-        question: "Do you provide one-time services or annual contracts?",
-        answer:
-          "We provide both! You can choose a one-time service or opt for an Annual Maintenance Contract (AMC) for year-round pest-free living.",
-      },
       {
         question: "Which areas do you serve?",
         answer:
-          "We provide pest control services across Delhi NCR, including homes, apartments, offices, restaurants, hotels, and commercial properties.",
+          "We operate across all major cities in India, offering both local and long-distance moving solutions.",
       },
       {
-        question: "Do you offer sanitisation services?",
+        question: "Do you provide storage facilities?",
         answer:
-          "Yes, we provide professional sanitisation and disinfection services to ensure your space is germ-free and safe.",
+          "Yes, we offer short-term and long-term warehousing facilities that are fully secure and monitored.",
+      },
+      {
+        question: "Do you move vehicles too?",
+        answer:
+          "We provide specialized car and bike transportation services with enclosed and open carriers.",
       },
     ],
   },
   "Process & Pricing": {
-    icon: <FaLeaf className="text-[#3CB371] text-xl" />,
+    icon: <FaBoxOpen className="text-[#FFC107] text-xl" />,
     faqs: [
       {
-        question: "How does your pest control process work?",
+        question: "How does your moving process work?",
         answer:
-          "Our experts first inspect the site, identify the problem, and then provide a customized treatment plan using eco-safe solutions.",
+          "We start with a pre-move survey, provide a detailed quote, pack items with care, load, transport, and deliver safely. We also assist in unpacking if requested.",
       },
       {
-        question: "What are your charges?",
+        question: "How are the charges calculated?",
         answer:
-          "Pricing depends on the size of the property, type of pest, and treatment required. We provide transparent quotes with no hidden costs.",
+          "Pricing depends on the distance, volume of goods, type of service, and additional facilities like storage or insurance. We provide transparent quotes.",
       },
       {
-        question: "How long does a treatment last?",
+        question: "Is insurance available?",
         answer:
-          "Effectiveness depends on the pest type and severity. For many pests, results last 3–6 months, while AMCs ensure continuous protection.",
+          "Yes, we provide transit insurance options to safeguard your goods against unexpected events.",
       },
     ],
   },
-  "Support & Contact": {
-    icon: <FaPhoneAlt className="text-[#3CB371] text-xl" />,
+  "Support & Booking": {
+    icon: <FaPhoneAlt className="text-[#FFC107] text-xl" />,
     faqs: [
       {
-        question: "How can I book a service?",
+        question: "How can I book your services?",
         answer:
-          "Simply call us, WhatsApp us, or book through our website. Our team will schedule a convenient time for your treatment.",
+          "You can book online via our website, call us directly, or visit our office. Our team will assist you instantly.",
       },
       {
-        question: "Do you provide emergency pest control?",
+        question: "Do you provide 24/7 support?",
         answer:
-          "Yes, we offer urgent pest control services for severe infestations and emergencies.",
+          "Yes, our support team is available 24/7 to help you with queries, updates, and emergency moves.",
       },
       {
-        question: "Do you give a service warranty?",
+        question: "How early should I book my move?",
         answer:
-          "Absolutely. Most of our treatments come with a warranty period, ensuring peace of mind and reliable service.",
+          "We recommend booking at least 3–7 days in advance, but we also accommodate last-minute and emergency relocations.",
       },
     ],
   },
 };
 
 const FAQ = () => {
-  const [activeTab, setActiveTab] = useState("Pest Control Basics");
+  const [activeTab, setActiveTab] = useState("Moving Basics");
   const [openIndex, setOpenIndex] = useState(null);
 
   const handleTabChange = (tab) => {
@@ -103,39 +103,39 @@ const FAQ = () => {
 
   return (
     <section
-      className="relative w-full py-5 px-4 md:px-10 bg-cover bg-center text-[#1B4332] overflow-hidden"
+      className="relative w-full py-16 px-4 md:px-10 bg-cover bg-center overflow-hidden"
       style={{ backgroundImage: `url(${bgImage})` }}
     >
-      {/* Green overlay for premium look */}
-      <div className="absolute inset-0 bg-black/5 z-0" />
+      {/* Overlay for premium gradient */}
+      <div className="absolute inset-0 bg-gradient-to-r from-[#003366]/60 to-[#1C1C1C]/95 z-0" />
 
-      {/* FAQ Container */}
-      <div className="relative max-w-7xl mx-auto rounded-3xl shadow-lg bg-transparent z-10 ">
-        <div className="text-center py-14 px-6 border-b border-gray-200">
-          <h2 className="text-4xl font-bold mb-3 font-[poppins] text-[#1B4332]">
+      <div className="relative max-w-7xl mx-auto z-10 rounded-3xl shadow-xl bg-white/5 backdrop-blur-lg border border-white/10">
+        {/* Header */}
+        <div className="text-center py-12 px-6 border-b border-gray-200/20">
+          <h2 className="text-4xl md:text-5xl font-extrabold mb-4 text-white font-[poppins]">
             Frequently Asked Questions
           </h2>
-          <p className="text-[#3D5A40] max-w-2xl mx-auto text-sm sm:text-base">
-            Learn more about{" "}
-            <span className="text-[#3CB371] font-semibold">
-              Neat & Clean Pest Control
+          <p className="text-gray-300 max-w-2xl mx-auto text-sm sm:text-base">
+            Get answers about{" "}
+            <span className="text-[#FFC107] font-semibold">
+              Avtar Packer & Mover
             </span>{" "}
-            and how we protect homes and businesses across Delhi NCR.
+            services, process, and support.
           </p>
         </div>
 
         <div className="flex flex-col md:flex-row">
-          {/* Left Tabs with Icons */}
-          <div className="md:w-1/3  p-6 border-r border-gray-200 flex flex-col gap-4">
+          {/* Left Tabs */}
+          <div className="md:w-1/3 p-6 border-r border-gray-200/20 flex flex-col gap-4">
             {Object.entries(faqCategories).map(([category, data], idx) => (
               <motion.button
                 key={idx}
                 onClick={() => handleTabChange(category)}
-                whileTap={{ scale: 0.98 }}
-                className={`text-left w-full px-5 font-[poppins] py-4 rounded-lg flex items-center gap-3 font-medium text-sm md:text-base transition-all duration-200 ${
+                whileTap={{ scale: 0.97 }}
+                className={`text-left w-full px-5 py-4 rounded-xl flex items-center gap-3 font-semibold text-sm md:text-base transition-all duration-300 shadow-sm ${
                   activeTab === category
-                    ? "bg-gradient-to-r from-[#3CB371] to-[#1B4332] text-white shadow"
-                    : "bg-white text-[#3D5A40] hover:bg-[#E6F9ED]"
+                    ? "bg-gradient-to-r from-[#FFC107] to-[#FF9800] text-[#1C1C1C] shadow-lg"
+                    : "bg-white/10 text-white hover:bg-white/20"
                 }`}
               >
                 {data.icon}
@@ -155,15 +155,15 @@ const FAQ = () => {
                 transition={{ duration: 0.4, ease: "easeInOut" }}
               >
                 {faqCategories[activeTab].faqs.map((faq, index) => (
-                  <div key={index} className="border-b border-gray-200 py-4">
+                  <div key={index} className="border-b border-gray-200/20 py-4">
                     <button
-                      className="w-full flex cursor-pointer font-[poppins] justify-between items-center text-left font-medium text-base sm:text-lg text-[#1B4332]"
+                      className="w-full flex justify-between items-center text-left font-medium text-lg text-white"
                       onClick={() =>
                         setOpenIndex(index === openIndex ? null : index)
                       }
                     >
                       {faq.question}
-                      <span className="text-[#3CB371] text-2xl font-bold">
+                      <span className="text-[#FFC107] text-2xl font-bold">
                         {openIndex === index ? "−" : "+"}
                       </span>
                     </button>
@@ -175,7 +175,7 @@ const FAQ = () => {
                           animate={{ height: "auto", opacity: 1 }}
                           exit={{ height: 0, opacity: 0 }}
                           transition={{ duration: 0.3 }}
-                          className="text-[#3D5A40] mt-3 text-sm leading-relaxed overflow-hidden"
+                          className="text-gray-300 mt-3 text-sm leading-relaxed overflow-hidden"
                         >
                           {faq.answer}
                         </motion.p>

@@ -7,6 +7,7 @@ import Footer from './components/Footer'
 import ScrollToTop from './components/ScrollToTop'
 import FloatingButtons from './components/FloatingButtons'
 import NotFound from "./pages/NotFound"
+import About from './pages/About'
 
 
 const App = () => {
@@ -15,8 +16,9 @@ const App = () => {
     <ScrollToTop/>
      <Navbar/>
     <Routes>
-          <Route path="*" element={<NotFound />} />
       <Route path='/' element={<Home/>}/>
+       <Route path='/about' element={<About/>}/>
+        <Route path="*" element={<NotFound />} />
     </Routes>
      <FloatingButtons/>
     <Footer/>
