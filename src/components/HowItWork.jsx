@@ -49,7 +49,7 @@ const HowItWorks = () => {
       {/* Header */}
       <div className="text-center mb-8 relative z-10">
         <p className="text-sm font-semibold text-[#003366] uppercase tracking-widest">
-          Avtar Packers & Movers
+          Avatar Packers And Movers
         </p>
         <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 drop-shadow-sm">
           How Our Moving Process Works
@@ -112,7 +112,7 @@ const HowItWorks = () => {
       {/* CTA */}
       <div className="mt-7 text-center px-6 max-w-3xl mx-auto relative z-10">
         <p className="text-lg text-gray-700 font-medium mb-6">
-          Move with peace of mind — Avtar Packers & Movers ensures your
+          Move with peace of mind — Avatar Packers And Movers ensures your
           relocation is seamless and stress-free.
         </p>
         <Link to="/contact">

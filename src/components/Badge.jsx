@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function AvatarBadge() {
   return (
-    <section className="w-full bg-gradient-to-r from-[#0d0d0d] via-[#1a1a1a] to-[#0d0d0d] py-6 px-6 md:px-16 font-[Poppins]">
+    <section className="w-full bg-gradient-to-r from-[#0d0d0d] via-[#1a1a1a] to-[#0d0d0d] py-4 px-6 md:px-16 font-[Poppins]">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between bg-[#111111]/80 border border-[#3CB371]/40 shadow-lg rounded-2xl px-6 md:px-10 py-6 backdrop-blur-md">
         
         {/* Left Content */}

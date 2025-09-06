@@ -22,7 +22,7 @@ const CertificateHero = () => {
         </h1>
         <p className="mt-6 text-base md:text-xl text-gray-800 leading-relaxed">
           <span className="font-semibold text-white">
-            Avtar Packer & Mover
+            Avatar Packers And Movers
           </span>{" "}
           is backed by industry-recognized{" "}
           <span className="text-[#FFD700] font-medium">certifications</span> and{" "}

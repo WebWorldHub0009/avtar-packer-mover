@@ -21,7 +21,7 @@ import {
 } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link, useLocation } from "react-router-dom";
-// import logo from "../assets/avtar-logo.png"; // replace with your logo
+import logo from "../assets/alogo.png"; 
 
 const navItemsLeft = [
   { name: "Home", path: "/", icon: <FaHome className="inline mr-1" /> },
@@ -81,7 +81,7 @@ const ModernNavbar = () => {
       </div>
 
       {/* Main Navbar */}
-      <nav className="w-full px-4 md:px-12 py-5 bg-white shadow-md relative z-50">
+      <nav className="w-full px-4 md:px-12 py-2 bg-white shadow-md relative z-50">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           {/* Left Items */}
           <ul className="hidden md:flex gap-6 text-sm font-medium uppercase">
@@ -97,20 +97,14 @@ const ModernNavbar = () => {
 
           {/* Center Logo */}
           <Link to="/" className="flex items-center gap-2">
-  {/* Logo Placeholder */}
-  {/* <img
-    src={""} // TODO: replace with logo
-    alt="Avtar Packer and Mover Logo"
-    className="h-10 md:h-16 object-contain"
-  /> */}
 
-  {/* Premium Text Logo */}
-  <h2
-    className="text-2xl md:text-3xl font-extrabold text-[#003366]
-                tracking-wide "
-  >
-    Avtar Packer & Mover
-  </h2>
+     <img
+      src={logo} // TODO: replace with logo
+      alt="Avtar Packer and Mover Logo"
+      className="h-10 md:h-18 object-cover"
+    />
+
+
 </Link>
 
 

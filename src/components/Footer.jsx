@@ -22,7 +22,7 @@ const containerVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
 };
 
-// Avtar Packers & Movers Services
+// Avatar Packers And Movers Services
 const services = [
   { title: "Relocation Services", slug: "relocation-services" },
   { title: "Packing Services", slug: "packing-services" },
@@ -55,7 +55,7 @@ export default function Footer() {
         {/* About Section */}
         <div className="flex flex-col space-y-4">
           <h4 className="font-bold text-4xl text-[#FFC107] mb-2">
-            Avtar Packers & Movers
+            Avatar Packers And Movers
           </h4>
           <p className="leading-relaxed text-gray-200">
             Trusted partner for safe, reliable, and affordable relocation, 
@@ -188,7 +188,7 @@ export default function Footer() {
       <div className="mt-10 text-center text-xs text-gray-300 border-t border-gray-500 pt-6 space-y-2 relative z-10">
         <VisitorCounter />
         <p>
-          © {new Date().getFullYear()} Avtar Packers & Movers. All rights
+          © {new Date().getFullYear()} Avatar Packers And Movers. All rights
           reserved.
         </p>
         <p>

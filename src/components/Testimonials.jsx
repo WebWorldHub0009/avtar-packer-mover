@@ -7,14 +7,14 @@ import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper/modules";
 
 const testimonials = [
-  { name: "Rohit Malhotra", title: "Software Engineer, Noida", text: "Avtar Packer & Mover handled my home shifting smoothly. Professional, on time, and stress-free service!" },
+  { name: "Rohit Malhotra", title: "Software Engineer, Noida", text: "Avatar Packers And Movers handled my home shifting smoothly. Professional, on time, and stress-free service!" },
   { name: "Simran Kaur", title: "Entrepreneur, Chandigarh", text: "They moved my office setup flawlessly. Every item was packed with care and delivered without a scratch." },
   { name: "Aditya Sharma", title: "Doctor, Gurgaon", text: "I had to relocate urgently, and they made it hassle-free. The team is polite, skilled, and reliable." },
   { name: "Neha Gupta", title: "Marketing Manager, Delhi", text: "Highly impressed with their punctuality and service quality. My family’s relocation was completely stress-free." },
   { name: "Karan Mehta", title: "Hotel Owner, Jaipur", text: "Their packing quality is excellent. From fragile items to heavy furniture, everything was moved with care." },
   { name: "Pooja Nair", title: "Teacher, Lucknow", text: "We shifted our house with them, and it was a wonderful experience. Affordable, professional, and secure." },
   { name: "Rahul Verma", title: "Businessman, Mumbai", text: "The best moving experience I’ve ever had. They took care of everything and kept me updated throughout." },
-  { name: "Anjali Singh", title: "Bank Manager, Pune", text: "From packing to delivery, the service was top-class. Definitely recommending Avtar Packer & Mover!" },
+  { name: "Anjali Singh", title: "Bank Manager, Pune", text: "From packing to delivery, the service was top-class. Definitely recommending Avatar Packers And Movers!" },
   { name: "Deepak Yadav", title: "Army Officer, Delhi Cantt", text: "As someone who relocates frequently, I can say they are the most professional movers I’ve used." },
   { name: "Meera Joshi", title: "Fashion Designer, Ahmedabad", text: "I loved their attention to detail. They handled my wardrobe and delicate items like they were their own." },
   { name: "Arjun Patel", title: "Student, Bangalore", text: "Shifting my hostel room was quick and easy with them. Great support team and reasonable pricing." },

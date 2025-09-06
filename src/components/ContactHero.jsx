@@ -23,7 +23,7 @@ export default function Hero() {
         <h1 className="text-4xl md:text-6xl font-extrabold leading-tight max-w-4xl">
           Experience{" "}
           <span className="text-[#003366]">Premium Relocation</span> Services
-          with Avtar Packer & Mover
+          with Avatar Packers And Movers
         </h1>
 
         <p className="mt-6 text-lg md:text-xl text-[#D9D9D9] max-w-2xl">

@@ -16,7 +16,7 @@ const stats = [
   },
   {
     icon: <FaUsers />,
-    title: "10+ Years",
+    title: "13+ Years",
     desc: "Trusted by Families & Businesses",
   },
   {
@@ -44,7 +44,7 @@ export default function MainAbout() {
         {/* Heading */}
         <div className="text-center mb-8">
           <h2 className="text-5xl font-extrabold text-[#003366] mb-4">
-            About Avtar Packer & Mover
+            About Avatar Packers And Movers
           </h2>
           <p className="text-lg sm:text-xl text-[#4A4A4A] font-medium max-w-2xl mx-auto">
             “Reliable. Professional. Safe. Moving your world with care and
@@ -62,7 +62,7 @@ export default function MainAbout() {
             <p className="text-gray-700 text-lg leading-relaxed mb-5">
               At{" "}
               <span className="font-semibold text-[#003366]">
-                Avtar Packer & Mover
+                Avatar Packers And Movers
               </span>
               , we specialize in providing{" "}
               <span className="font-semibold text-[#FFC107]">
@@ -83,12 +83,12 @@ export default function MainAbout() {
             <div className="rounded-3xl overflow-hidden shadow-2xl border-4 border-white relative">
               <img
                 src={aboutImg}
-                alt="Avtar Packer & Mover"
+                alt="Avatar Packers And Movers"
                 className="w-full h-auto object-cover"
               />
               {/* Golden Overlay Badge */}
               <div className="absolute bottom-4 left-4 bg-[#003366] text-white px-6 py-3 rounded-xl shadow-lg">
-                <span className="text-2xl font-bold text-[#FFC107]">10+</span>{" "}
+                <span className="text-2xl font-bold text-[#FFC107]">13+</span>{" "}
                 Years of Excellence
               </div>
             </div>

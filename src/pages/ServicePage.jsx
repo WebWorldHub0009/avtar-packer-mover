@@ -46,7 +46,7 @@ const ServicePage = () => {
     <div className="w-full min-h-screen bg-gradient-to-b from-white via-gray-100 to-white text-gray-900 font-sans">
 
       {/* HERO */}
-      <div className="relative w-full h-[80vh] overflow-hidden">
+      <div className="relative w-full h-[100vh] overflow-hidden">
         <img
           src={service.image}
           alt={service.title}
@@ -58,7 +58,7 @@ const ServicePage = () => {
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
-            className="text-4xl md:text-5xl font-extrabold flex items-center gap-2 text-gray-200"
+            className="text-4xl md:text-5xl font-extrabold flex items-center gap-2 text-gray-800"
           >
             <FaShippingFast className="text-green-500 animate-pulse" />
             {service.title}
@@ -67,7 +67,7 @@ const ServicePage = () => {
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.5, duration: 1 }}
-            className="mt-2 text-gray-100 text-lg"
+            className="mt-2 text-black text-lg"
           >
             {service.shortDescription}
           </motion.p>

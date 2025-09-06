@@ -1,21 +1,22 @@
 // src/components/AboutSection.jsx
 import React from "react";
 import { FiTruck, FiPackage, FiShield } from "react-icons/fi";
-import aboutImg from "../assets/home/ah2.jpg"; // replace with mover image
+import aboutImg from "../assets/tabo.png"; 
+import bg from "../assets/home/mobile.png"
 
 export default function AboutSection() {
   return (
-    <section className="relative bg-gradient-to-b from-[#f9fafc] to-[#eaf1f8]px-6 md:px-12 py-16">
+    <section className="relative bg-gradient-to-b from-[#f9fafc] to-[#eaf1f8]px-6 md:px-12 py-10">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         
         {/* Left Content */}
         <div className="space-y-6">
-          <h2 className="text-3xl md:text-5xl font-bold font-[Poppins] text-[#1A365D] leading-snug">
-            Moving Made Easy, <br /> With <span className="text-[#FFC107]">Avtar Packers & Movers</span>
+          <h2 className="text-4xl pl-3 md:text-5xl font-bold font-[Poppins] text-[#1A365D] leading-snug">
+            Moving Made Easy, <br /> With <span className="text-[#FFC107]">Avatar Packers And Movers</span>
           </h2>
 
-          <p className="text-gray-600 text-lg">
-            At <span className="font-semibold text-[#FFC107]">Avtar Packers & Movers</span>, 
+          <p className="text-gray-600 text-lg px-4">
+            At <span className="font-semibold text-[#FFC107]">Avatar Packers And Movers</span>, 
             we ensure your relocation is smooth, secure, and stress-free. 
             With premium packing, safe transport, and reliable professionals, 
             we handle every move with care—whether it’s local shifting, office relocation, 
@@ -60,27 +61,37 @@ export default function AboutSection() {
         </div>
 
         {/* Right Image */}
-        <div className="relative">
-          <img
-            src={aboutImg}
-            alt="About Avtar Packers & Movers"
-            className="rounded-xl shadow-xl object-cover w-full h-[400px] md:h-[500px]"
-          />
+     {/* Right Image */}
+<div className="relative">
+  {/* ✅ Mobile Image */}
+  <img
+    src={bg} // replace with your mobile image
+    alt="About Avatar Packers & Movers Mobile"
+    className="rounded-xl shadow-xl object-cover w-full h-[300px] md:hidden"
+  />
 
-          {/* Floating Badge */}
-          <div className="absolute -bottom-6 md:-bottom-8 left-1/2 -translate-x-1/2 bg-white shadow-lg rounded-full px-5 md:px-8 py-3 border border-gray-200 flex items-center gap-2 md:gap-3 text-sm md:text-base font-medium">
-            <FiShield className="text-[#FFD700] text-lg" />
-            <span className="text-gray-800 whitespace-nowrap">
-              15+ Years of Trusted Service
-            </span>
-          </div>
-        </div>
+  {/* ✅ Desktop Image */}
+  <img
+    src={aboutImg}
+    alt="About Avatar Packers & Movers"
+    className="hidden md:block rounded-xl shadow-xl object-cover w-full h-[400px] md:h-[500px]"
+  />
+
+  {/* Floating Badge (Visible for both) */}
+  <div className="absolute -bottom-6 md:-bottom-8 left-1/2 -translate-x-1/2 bg-white shadow-lg rounded-full px-5 md:px-8 py-3 border border-gray-200 flex items-center gap-2 md:gap-3 text-sm md:text-base font-medium">
+    <FiShield className="text-[#FFD700] text-lg" />
+    <span className="text-gray-800 whitespace-nowrap">
+      13+ Years of Trusted Service
+    </span>
+  </div>
+</div>
+
       </div>
 
       {/* Highlight Text Below */}
       <div className="text-center mt-14 max-w-4xl mx-auto">
         <p className="text-lg text-gray-700 leading-relaxed">
-          <span className="text-[#FFC107] font-semibold"> Avtar Packers & Movers </span> 
+          <span className="text-[#FFC107] font-semibold"> Avatar Packers And Movers </span> 
           is a name synonymous with trust, efficiency, and premium relocation services. 
           From careful packing to safe transportation, we bring peace of mind to 
           thousands of families and businesses nationwide.

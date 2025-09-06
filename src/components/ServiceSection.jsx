@@ -33,7 +33,7 @@ export default function ServicesSection() {
           Our Premium <span className="text-[#FFD700]">Services</span>
         </h2>
         <p className="mt-4 font-body text-gray-800 max-w-xl mx-auto text-lg">
-          At <span className="text-[#FFD700] font-semibold">Avtar Packer & Mover</span>, 
+          At <span className="text-[#FFD700] font-semibold">Avatar Packers And Movers</span>, 
           we provide safe, professional and reliable moving solutions across India.  
           From packing to relocation, we handle everything with care and precision.
         </p>

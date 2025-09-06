@@ -118,7 +118,7 @@ const FAQ = () => {
           <p className="text-gray-300 max-w-2xl mx-auto text-sm sm:text-base">
             Get answers about{" "}
             <span className="text-[#FFC107] font-semibold">
-              Avtar Packer & Mover
+              Avatar Packers And Movers
             </span>{" "}
             services, process, and support.
           </p>

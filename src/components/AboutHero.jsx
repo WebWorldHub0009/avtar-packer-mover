@@ -31,7 +31,7 @@ const AboutHero = () => {
         <p className="mt-6 text-lg md:text-xl text-white leading-relaxed max-w-2xl mx-auto">
           At{" "}
           <span className="font-semibold text-[#003366]">
-            Avtar Packer & Mover
+            Avatar Packers And Movers
           </span>
           , we specialize in delivering{" "}
           <span className="text-[#FFC107] font-semibold">

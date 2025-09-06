@@ -64,7 +64,7 @@ export default function OurTeam() {
         >
           The driving force behind{" "}
           <span className="text-[#FFC107] font-semibold">
-            Avtar Packer & Mover
+            Avatar Packers And Movers
           </span>{" "}
           — experienced leaders who ensure trust, reliability, and excellence
           in every relocation.

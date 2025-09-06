@@ -23,7 +23,7 @@ const ServicesHero = () => {
         <p className="mt-6 text-base md:text-xl text-gray-200 leading-relaxed">
           With{" "}
           <span className="text-[#FFD700] font-semibold">
-            Avtar Packer & Mover
+            Avatar Packers And Movers
           </span>
           , every relocation becomes a{" "}
           <span className="text-[#FFD700]">premium experience</span>. From{" "}

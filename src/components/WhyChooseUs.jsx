@@ -16,7 +16,7 @@ export default function WhyChooseUs() {
       <div className="relative z-10">
         {/* Title */}
         <h2 className="text-center text-4xl sm:text-6xl md:text-6xl font-bold tracking-wider mb-10">
-          WHY <span className="text-[#3CB371]">AVTAR PACKERS & MOVERS</span>
+          WHY <span className="text-[#3CB371]">AVATAR PACKERS AND MOVERS</span>
         </h2>
 
         {/* Top Row */}
@@ -33,7 +33,7 @@ export default function WhyChooseUs() {
           {/* Text */}
           <div className="order-2 md:order-2 text-gray-200 leading-relaxed text-lg space-y-4">
             <p>
-              At <span className="text-[#3CB371] font-semibold">Avtar Packers & Movers</span>, 
+              At <span className="text-[#3CB371] font-semibold">Avatar Packers And Movers</span>, 
               we deliver <span className="text-[#FFD700]">safe, fast, and premium relocation</span> services.  
               From local shifting to nationwide moves, our trained team ensures your valuables are packed 
               and transported with utmost care. We use high-quality materials, advanced logistics, and 
@@ -66,7 +66,7 @@ export default function WhyChooseUs() {
               <span className="text-[#FFD700]"> tailored packages</span> to suit your budget and requirements.  
               From using specialized packing materials for fragile items to providing secure transportation 
               for vehicles, our services are designed to match international quality standards.  
-              With <span className="text-[#3CB371] font-semibold">Avtar Packers & Movers</span>, you don’t just move — 
+              With <span className="text-[#3CB371] font-semibold">Avatar Packers And Movers</span>, you don’t just move — 
               you experience <span className="text-[#FFD700]">excellence, care, and trust</span>.
             </p>
           </div>
