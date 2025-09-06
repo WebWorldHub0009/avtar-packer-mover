@@ -17,6 +17,7 @@ import {
   FaEnvelope,
   FaWhatsapp,
   FaRegHandPointDown,
+  FaCaretRight,
 } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link, useLocation } from "react-router-dom";
@@ -29,9 +30,8 @@ const navItemsLeft = [
 ];
 
 const navItemsRight = [
-  { name: "Water Tank Cleaning", path: "/watertank", icon: <FaCertificate className="inline mr-1" /> },
-  { name: "Product", path: "/product", icon: <FaRegHandPointDown className="inline mr-1" /> },
   { name: "Contact Us", path: "/contact", icon: <FaPhoneAlt className="inline mr-1" /> },
+   { name: "Certificates", path: "/certificate", icon: <FaEnvelope className="inline mr-1" /> },
 ];
 
 const socialLinks = {

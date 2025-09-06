@@ -7,16 +7,21 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 // ✅ Example Packer & Mover service images (replace with real images)
-import relocation from "../assets/home/ah2.jpg";
+import relocation from "../assets/service/relocation.jpg";
+import pack from "../assets/service/packing.jpg";
+import move from "../assets/service/movea.jpg";
+import car from "../assets/home/car.jpg";
+import cargo from "../assets/service/cargoa.jpg";
+import commercial from "../assets/service/cmove.jpg";
 
 
 const services = [
   { title: "Relocation Services", slug: "relocation-services", image: relocation },
-  { title: "Packing Services", slug: "packing-services", image:relocation },
-  { title: "Moving Services", slug: "moving-services", image: relocation },
-  { title: "Transport Services", slug: "transport-services", image: relocation },
-  { title: "Cargo Services", slug: "cargo-services", image: relocation },
-  { title: "Commercial Moving", slug: "commercial-moving", image: relocation },
+  { title: "Packing Services", slug: "packing-services", image:pack },
+  { title: "Moving Services", slug: "moving-services", image: move },
+  { title: "Transport Services", slug: "transport-services", image: car },
+  { title: "Cargo Services", slug: "cargo-services", image: cargo },
+  { title: "Commercial Moving", slug: "commercial-moving", image: commercial },
 ];
 
 export default function ServicesSection() {

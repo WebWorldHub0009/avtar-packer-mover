@@ -1,4 +1,3 @@
-// src/components/Footer.jsx
 import {
   FaFacebookF,
   FaInstagram,
@@ -9,7 +8,6 @@ import {
   FaInfoCircle,
   FaTruckMoving,
   FaCertificate,
-  FaProductHunt,
   FaContao,
 } from "react-icons/fa";
 import { motion, useAnimation } from "framer-motion";
@@ -107,8 +105,7 @@ export default function Footer() {
               ["About Us", "/about", <FaInfoCircle />],
               ["Services", "/services", <FaTruckMoving />],
               ["Contact Us", "/contact", <FaContao />],
-              ["Our Products", "/product", <FaProductHunt />],
-              ["Certificates", "/certificates", <FaCertificate />],
+              ["Certificates", "/certificate", <FaCertificate />],
             ].map(([text, link, icon], i) => (
               <li key={i}>
                 <Link
@@ -158,9 +155,7 @@ export default function Footer() {
             Contact Info
           </h4>
           <address className="not-italic leading-relaxed mb-4 text-gray-200">
-            Sangam Vihar, Nearby Sunday Market, <br />
-            Khora Colony, Ghaziabad, Uttar Pradesh <br />
-            201020, India
+          Address: Plot 186/187 Sain farm Richpal Gari Gaurcity 2, Greater Noida W Rd, Gaur City 2, Greater Noida, Uttar Pradesh 201309
           </address>
 
           <p className="text-sm mb-2 flex items-center gap-2">
@@ -181,7 +176,10 @@ export default function Footer() {
           )}
 
           <div className="mb-4 flex justify-start items-center">
+            <div className="relative right-6">
+
             <Translator />
+            </div>
           </div>
         </div>
       </div>
