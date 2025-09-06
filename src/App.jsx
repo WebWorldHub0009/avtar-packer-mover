@@ -6,13 +6,15 @@ import ScrollToTop from "./components/ScrollToTop";
 import FloatingButtons from "./components/FloatingButtons";
 import PopupForm from "./components/PopupForm";
 
+
+
 // ✅ Lazy load pages
 const Home = lazy(() => import("./pages/Home"));
 const About = lazy(() => import("./pages/About"));
 const Contact = lazy(() => import("./pages/Contact"));
 const Certificate = lazy(() => import("./pages/Certificate"));
 const Services = lazy(() => import("./pages/Services"));
-const ServicePage = lazy(() => import("./pages/Servicepage"));
+const ServicePage = lazy(() => import("./pages/ServicePage"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 const App = () => {
