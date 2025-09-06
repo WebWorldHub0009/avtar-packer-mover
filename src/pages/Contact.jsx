@@ -25,13 +25,11 @@ const Contact = () => {
       tailored to your needs.
     </p>
 
-    <div className="space-y-6 text-sm sm:text-base">
+    <div className="space-y-2 text-sm sm:text-base">
       <div>
-        <h4 className="font-semibold mb-1 text-[#FFC107]">Owner</h4>
-        <p className="font-body">Manoj Vats</p>
-        <p>
-          📞 <a href="tel:+918860750143" className="hover:text-[#003366]">+91 88607 50143</a>
-        </p>
+        <h4 className="font-semibold text-[#FFC107]">Owner</h4>
+        <p className=" font-bold text-xl">Manoj Vats</p>
+
       </div>
 
       <div>
@@ -55,14 +53,6 @@ const Contact = () => {
         <p className="leading-relaxed">
           Plot 186/187, Sain Farm, Richpal Gari, Gaur City 2, <br />
           Greater Noida W Rd, Greater Noida, Uttar Pradesh - 201309
-        </p>
-      </div>
-
-      <div>
-        <h4 className="font-semibold mb-1 text-[#FFC107]">Branch Address</h4>
-        <p className="leading-relaxed">
-          Sangam Vihar, Nearby Sunday Market, Khora Colony, <br />
-          Ghaziabad, Uttar Pradesh - 201020, India
         </p>
       </div>
     </div>

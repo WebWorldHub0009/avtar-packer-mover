@@ -10,17 +10,14 @@ import {
   FaCertificate,
   FaContao,
 } from "react-icons/fa";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import VisitorCounter from "./VisitorCounter";
 import Translator from "./Translator";
 
-const containerVariants = {
-  hidden: { opacity: 0, y: 50 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
-};
+// 🖼️ Import background + logo
+import footerBg from "../assets/avbg.jpg";
+import logo from "../assets/avlogo.png";
 
 // Avatar Packers And Movers Services
 const services = [
@@ -33,36 +30,42 @@ const services = [
 ];
 
 export default function Footer() {
-  const controls = useAnimation();
-  const [ref, inView] = useInView({ threshold: 0.2 });
-
   useEffect(() => {
-    controls.start(inView ? "visible" : "hidden");
-  }, [inView, controls]);
+    // Any side effects if needed later
+  }, []);
 
   return (
-    <motion.footer
-      ref={ref}
-      variants={containerVariants}
-      initial="hidden"
-      animate={controls}
-      className="relative pt-12 pb-12 px-6 md:px-16 font-[poppins] text-white overflow-hidden bg-[#003366]"
-    >
-      {/* Overlay for slight gradient effect */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#001F3F] via-[#003366] to-[#1C1C1C] opacity-95 z-0" />
+    <footer className="relative pt-12 pb-12 px-6 md:px-16 font-[poppins] text-black overflow-hidden">
+      {/* Background Image with Overlay */}
+      <div
+        className="absolute inset-0 bg-cover bg-center z-0"
+        style={{ backgroundImage: `url(${footerBg})` }}
+      />
+      <div className="absolute inset-0 z-0" />
 
       <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 text-sm">
         {/* About Section */}
         <div className="flex flex-col space-y-4">
-          <h4 className="font-bold text-4xl text-[#FFC107] mb-2">
-            Avatar Packers And Movers
-          </h4>
-          <p className="leading-relaxed text-gray-200">
-            Trusted partner for safe, reliable, and affordable relocation, 
-            transport, and cargo services across India. We ensure smooth 
+          <div className="flex flex-col items-start gap-3">
+            <div className="flex items-center gap-3">
+              <img
+                src={logo}
+                alt="Avatar Packers And Movers Logo"
+                className="w-16 h-16 md:w-20 md:h-20 rounded-full shadow-md"
+              />
+            </div>
+            <p className="text-2xl md:text-4xl font-semibold text-[#FFC107] tracking-wide">
+              Avatar Packers & Movers
+            </p>
+          </div>
+
+          <p className="leading-relaxed text-black text-md mt-2">
+            Trusted partner for safe, reliable, and affordable relocation,
+            transport, and cargo services across India. We ensure smooth
             moving with professional care.
           </p>
 
+          {/* Social Icons */}
           <div className="mt-4 flex space-x-4">
             {[
               ["https://www.instagram.com", FaInstagram],
@@ -77,9 +80,9 @@ export default function Footer() {
                 href={url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#FFC107] hover:text-white transition duration-300"
+                className="text-[#FFC107] hover:text-black transition duration-300"
               >
-                <Icon size={20} />
+                <Icon size={22} />
               </a>
             ))}
           </div>
@@ -96,7 +99,7 @@ export default function Footer() {
 
         {/* Quick Links */}
         <div>
-          <h4 className="font-semibold text-2xl mb-4 text-[#FFC107]">
+          <h4 className="font-semibold text-3xl mb-4 text-[#FFC107]">
             Quick Links
           </h4>
           <ul className="space-y-3">
@@ -110,7 +113,7 @@ export default function Footer() {
               <li key={i}>
                 <Link
                   to={link}
-                  className="flex items-center gap-2 text-gray-200 hover:text-[#FFC107] transition duration-300"
+                  className="flex items-center gap-2 text-black hover:text-[#FFC107] transition duration-300"
                 >
                   {icon} {text}
                 </Link>
@@ -118,11 +121,10 @@ export default function Footer() {
             ))}
           </ul>
 
-          {/* IDs */}
-          <h4 className="font-semibold text-2xl mt-6 mb-2 text-[#FFC107]">
+          <h4 className="font-semibold text-3xl mt-6 mb-2 text-[#FFC107]">
             Business Info
           </h4>
-          <ul className="space-y-2 text-gray-200">
+          <ul className="space-y-2 text-black">
             <li>GSTIN/UIN: 09CZMPS9024H1ZQ</li>
             <li>UDYAM: UP-28-0107517</li>
             <li>Trade Mark No: 6261467</li>
@@ -131,7 +133,7 @@ export default function Footer() {
 
         {/* Services */}
         <div>
-          <h4 className="font-semibold text-2xl mb-4 text-[#FFC107]">
+          <h4 className="font-semibold text-3xl mb-4 text-[#FFC107]">
             Our Services
           </h4>
           <ul className="space-y-3">
@@ -140,7 +142,7 @@ export default function Footer() {
                 <FaTruckMoving className="text-[#FFC107]" />
                 <Link
                   to={`/services/${slug}`}
-                  className="text-gray-200 hover:text-[#FFC107] transition duration-300"
+                  className="text-black hover:text-[#FFC107] transition duration-300"
                 >
                   {title}
                 </Link>
@@ -151,23 +153,24 @@ export default function Footer() {
 
         {/* Contact Info */}
         <div>
-          <h4 className="font-semibold text-2xl mb-4 text-[#FFC107]">
+          <h4 className="font-semibold text-3xl mb-4 text-[#FFC107]">
             Contact Info
           </h4>
-          <address className="not-italic leading-relaxed mb-4 text-gray-200">
-          Address: Plot 186/187 Sain farm Richpal Gari Gaurcity 2, Greater Noida W Rd, Gaur City 2, Greater Noida, Uttar Pradesh 201309
+          <address className="not-italic leading-relaxed mb-4 text-black">
+            Address: Plot 186/187 Sain farm Richpal Gari Gaurcity 2, Greater
+            Noida W Rd, Gaur City 2, Greater Noida, Uttar Pradesh 201309
           </address>
 
           <p className="text-sm mb-2 flex items-center gap-2">
             <FaPhoneAlt className="text-[#FFC107]" /> Owner: Manoj Vats
           </p>
-          {["+91 97737 60041", "+91 88607 50143", "+91 97737 60042", "+91 9540457075"].map(
+          {["+91 9773760041", "+91 9773760042", "+91 9540457075"].map(
             (num, i) => (
               <p key={i} className="text-sm mb-2 flex items-center gap-2">
                 <FaPhoneAlt className="text-[#FFC107]" />
                 <a
                   href={`tel:${num.replace(/\s/g, "")}`}
-                  className="hover:text-white transition duration-300"
+                  className="hover:text-black transition duration-300"
                 >
                   {num}
                 </a>
@@ -176,16 +179,15 @@ export default function Footer() {
           )}
 
           <div className="mb-4 flex justify-start items-center">
-            <div className="relative right-6">
-
-            <Translator />
+            <div className="relative">
+              <Translator />
             </div>
           </div>
         </div>
       </div>
 
       {/* Bottom Section */}
-      <div className="mt-10 text-center text-xs text-gray-300 border-t border-gray-500 pt-6 space-y-2 relative z-10">
+      <div className="mt-10 text-center text-xs text-black border-t border-gray-500 pt-6 space-y-2 relative z-10">
         <VisitorCounter />
         <p>
           © {new Date().getFullYear()} Avatar Packers And Movers. All rights
@@ -203,6 +205,6 @@ export default function Footer() {
           </a>
         </p>
       </div>
-    </motion.footer>
+    </footer>
   );
 }

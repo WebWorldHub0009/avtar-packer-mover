@@ -13,15 +13,12 @@ import {
   FaTruckMoving,
   FaInfoCircle,
   FaPhoneAlt,
-  FaCertificate,
   FaEnvelope,
   FaWhatsapp,
-  FaRegHandPointDown,
-  FaCaretRight,
 } from "react-icons/fa";
-import { motion, AnimatePresence } from "framer-motion";
 import { Link, useLocation } from "react-router-dom";
-import logo from "../assets/alogo.png"; 
+import logo from "../assets/alogo.png";
+import logo2 from "../assets/avlogo.png";
 
 const navItemsLeft = [
   { name: "Home", path: "/", icon: <FaHome className="inline mr-1" /> },
@@ -31,7 +28,7 @@ const navItemsLeft = [
 
 const navItemsRight = [
   { name: "Contact Us", path: "/contact", icon: <FaPhoneAlt className="inline mr-1" /> },
-   { name: "Certificates", path: "/certificate", icon: <FaEnvelope className="inline mr-1" /> },
+  { name: "Certificates", path: "/certificate", icon: <FaEnvelope className="inline mr-1" /> },
 ];
 
 const socialLinks = {
@@ -68,21 +65,15 @@ const ModernNavbar = () => {
       {/* Top Header — desktop only */}
       <div className="hidden md:block bg-[#003366] text-white text-xs md:text-sm py-2 px-4 md:px-12 font-sans">
         <div className="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-3">
-          <p className="flex items-center gap-2">
-            📞 +91 97737 60041
-          </p>
-          <p className="flex items-center gap-2">
-            🧾 GSTIN/UIN: 09CZMPS9024H1ZQ
-          </p>
-          <p className="flex items-center gap-2">
-            🏢 UDYAM-UP-28-0107517
-          </p>
+          <p className="flex items-center gap-2">📞 +91 97737 60041</p>
+          <p className="flex items-center gap-2">🧾 GSTIN/UIN: 09CZMPS9024H1ZQ</p>
+          <p className="flex items-center gap-2">🏢 UDYAM-UP-28-0107517</p>
         </div>
       </div>
 
       {/* Main Navbar */}
       <nav className="w-full px-4 md:px-12 py-2 bg-white shadow-md relative z-50">
-        <div className="max-w-7xl mx-auto flex justify-between items-center">
+        <div className="max-w-7xl mx-auto flex justify-between items-center relative">
           {/* Left Items */}
           <ul className="hidden md:flex gap-6 text-sm font-medium uppercase">
             {navItemsLeft.map((item) => (
@@ -97,16 +88,12 @@ const ModernNavbar = () => {
 
           {/* Center Logo */}
           <Link to="/" className="flex items-center gap-2">
-
-     <img
-      src={logo} // TODO: replace with logo
-      alt="Avtar Packer and Mover Logo"
-      className="h-10 md:h-18 object-cover"
-    />
-
-
-</Link>
-
+            <img
+              src={logo}
+              alt="Avatar Packers and Movers Logo"
+              className="h-10 md:h-14 object-cover"
+            />
+          </Link>
 
           {/* Right Items */}
           <div className="hidden md:flex items-center gap-6">
@@ -155,120 +142,103 @@ const ModernNavbar = () => {
         </div>
 
         {/* Mobile Panel */}
-        <AnimatePresence>
-          {isMenuOpen && (
-            <motion.div
-              initial={{ x: "-100%" }}
-              animate={{ x: 0 }}
-              exit={{ x: "-100%" }}
-              transition={{ duration: 0.3 }}
-              className="fixed inset-0 z-50 flex"
+        {isMenuOpen && (
+          <div className="fixed inset-0 z-50 flex">
+            {/* Slide-out */}
+            <div
+              ref={panelRef}
+              className="w-72 h-full bg-white shadow-xl px-6 py-4 flex flex-col"
             >
-              {/* Slide-out */}
-              <motion.div
-                ref={panelRef}
-                className="w-72 h-full bg-white shadow-xl px-6 py-4 flex flex-col"
-              >
-                {/* Mobile brand row */}
-                <div className="flex justify-between items-center">
-                  <Link to="/" className="flex items-center gap-2">
-  {/* Logo Placeholder */}
-  {/* <img
-    src={""} // TODO: replace with logo
-    alt="Avtar Packer and Mover Logo"
-    className="h-10 md:h-16 object-contain"
-  /> */}
-
-  {/* Premium Text Logo */}
-  <h2
-    className="text-2xl md:text-3xl font-extrabold text-[#003366]
-                tracking-wide "
-  >
-    Avtar Packer & Mover
-  </h2>
-</Link>
-                  <FaTimes
-                    className="text-xl text-[#1C1C1C] cursor-pointer"
-                    onClick={toggleMenu}
+              {/* Mobile brand row */}
+              <div className="flex justify-between items-center">
+                <Link to="/" className="flex items-center gap-2">
+                  <img
+                    src={logo2}
+                    alt="Avatar Packers and Movers Logo"
+                    className="h-20 md:h-20 object-contain"
                   />
-                </div>
+                </Link>
+                <FaTimes
+                  className="text-xl text-[#1C1C1C] cursor-pointer"
+                  onClick={toggleMenu}
+                />
+              </div>
 
-                <hr className="my-4" />
+              <hr className="my-4" />
 
-                {/* Mobile Nav Items */}
-                <nav className="flex flex-col gap-3 text-sm">
-                  {[...navItemsLeft, ...navItemsRight].map((item) => (
-                    <Link
-                      key={item.path}
-                      to={item.path}
-                      className={`flex items-center gap-2 ${
-                        pathname === item.path
-                          ? "font-semibold text-[#003366]"
-                          : "text-[#1C1C1C]"
-                      }`}
-                      onClick={toggleMenu}
-                    >
-                      {item.icon}
-                      {item.name}
-                    </Link>
-                  ))}
-                </nav>
-
-                {/* Quick WhatsApp */}
-                <div className="mt-6">
-                  <a
-                    href={socialLinks.whatsapp}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-[#25D366] text-white text-sm font-semibold py-2 shadow hover:opacity-95 transition"
+              {/* Mobile Nav Items */}
+              <nav className="flex flex-col gap-3 text-sm">
+                {[...navItemsLeft, ...navItemsRight].map((item) => (
+                  <Link
+                    key={item.path}
+                    to={item.path}
+                    className={`flex items-center gap-2 ${
+                      pathname === item.path
+                        ? "font-semibold text-[#003366]"
+                        : "text-[#1C1C1C]"
+                    }`}
+                    onClick={toggleMenu}
                   >
-                    <FaWhatsapp /> WhatsApp Us
-                  </a>
-                </div>
+                    {item.icon}
+                    {item.name}
+                  </Link>
+                ))}
+              </nav>
 
-                {/* Mobile Top Header Info */}
-                <div className="mt-4 rounded-xl border border-[#D9D9D9] bg-gradient-to-r from-[#F9FAFB] to-white p-3 text-xs text-[#003366]">
-                  <p>📞 +91 97737 60041</p>
-                  <p>🧾 GSTIN/UIN: 09CZMPS9024H1ZQ</p>
-                  <p>🏢 UDYAM-UP-28-0107517</p>
-                </div>
+              {/* Quick WhatsApp */}
+              <div className="mt-6">
+                <a
+                  href={socialLinks.whatsapp}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-[#25D366] text-white text-sm font-semibold py-2 shadow hover:opacity-95 transition"
+                >
+                  <FaWhatsapp /> WhatsApp Us
+                </a>
+              </div>
 
-                {/* Mobile Social */}
-                <div className="mt-auto pt-4 border-t text-xs">
-                  <div className="flex gap-3 mt-3 text-lg text-[#1C1C1C]">
-                    {Object.entries(socialLinks).map(([k, url]) => (
-                      <a
-                        key={k}
-                        href={url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="hover:text-[#FFC107]"
-                      >
-                        {React.createElement(
-                          {
-                            facebook: FaFacebookF,
-                            instagram: FaInstagram,
-                            twitter: FaTwitter,
-                            youtube: FaYoutube,
-                            linkedin: FaLinkedinIn,
-                            skype: FaSkype,
-                            whatsapp: FaWhatsapp,
-                          }[k]
-                        )}
-                      </a>
-                    ))}
-                  </div>
-                </div>
-              </motion.div>
+              {/* Mobile Top Header Info */}
+              <div className="mt-4 rounded-xl border border-[#D9D9D9] bg-gradient-to-r from-[#F9FAFB] to-white p-3 text-xs text-[#003366]">
+                <p>📞 +91 97737 60041</p>
+                <p>🧾 GSTIN/UIN: 09CZMPS9024H1ZQ</p>
+                <p>🏢 UDYAM-UP-28-0107517</p>
+              </div>
 
-              {/* Overlay */}
-              <div
-                className="flex-1 bg-black/10 backdrop-blur-sm"
-                onClick={() => setIsMenuOpen(false)}
-              />
-            </motion.div>
-          )}
-        </AnimatePresence>
+              {/* Mobile Social */}
+              <div className="mt-auto pt-4 border-t text-xs">
+                <div className="flex gap-3 mt-3 text-lg text-[#1C1C1C]">
+                  {Object.entries(socialLinks).map(([k, url]) => (
+                    <a
+                      key={k}
+                      href={url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-[#FFC107]"
+                    >
+                      {React.createElement(
+                        {
+                          facebook: FaFacebookF,
+                          instagram: FaInstagram,
+                          twitter: FaTwitter,
+                          youtube: FaYoutube,
+                          linkedin: FaLinkedinIn,
+                          skype: FaSkype,
+                          whatsapp: FaWhatsapp,
+                        }[k]
+                      )}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Overlay */}
+            <div
+              className="flex-1 bg-black/10 backdrop-blur-sm"
+              onClick={() => setIsMenuOpen(false)}
+            />
+          </div>
+        )}
       </nav>
     </>
   );

@@ -47,7 +47,6 @@ const slides = [
     icon: <FiBox />,
     img: carTransport || baseImage,
   },
- 
 ];
 
 const HeroSection = () => {
@@ -225,6 +224,26 @@ const HeroSection = () => {
             </ul>
           )}
         </div>
+      </div>
+
+      {/* 📱 MOBILE CENTER PREMIUM CONTENT */}
+      <div className="absolute inset-x-0 top-58 flex justify-center items-center sm:top-36 text-center px-6 block lg:hidden">
+        <motion.div
+          key={activeSlide.id}
+          initial={{ opacity: 0, y: 30, scale: 0.95 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          exit={{ opacity: 0, y: -30, scale: 0.95 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className=" px-6 py-6 max-w-sm mx-auto"
+        >
+          <div className="flex flex-col items-center space-y-3">
+            <div className="text-yellow-400 text-3xl">{activeSlide.icon}</div>
+           
+            <p className=" text-gray-100 opacity-90 text-2xl leading-relaxed">
+              {activeSlide.subtitle}
+            </p>
+          </div>
+        </motion.div>
       </div>
 
       {/* MOBILE SLIDE LIST (premium style) */}
