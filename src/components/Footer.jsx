@@ -162,7 +162,7 @@ export default function Footer() {
           </address>
 
           <p className="text-sm mb-2 flex items-center gap-2">
-            <FaPhoneAlt className="text-red-800" /> Owner: Manoj Vats
+            <FaPhoneAlt className="text-red-800" /> Owner: -
           </p>
           {["+91 9773760041", "+91 9773760042", "+91 9540457075"].map(
             (num, i) => (

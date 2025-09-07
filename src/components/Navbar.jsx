@@ -71,10 +71,10 @@ const ModernNavbar = () => {
 
           {/* Right: Email */}
           <a
-            href="mailto:info@avatarpackers.com"
+            href="mailto:Info@avatarpackersandmovers.com"
             className="flex items-center gap-2 hover:underline"
           >
-            ✉️ info@avatarpackers.com
+            ✉️ Info@avatarpackersandmovers.com
           </a>
         </div>
 
@@ -202,16 +202,17 @@ const ModernNavbar = () => {
               </nav>
 
               {/* Quick WhatsApp */}
-              <div className="mt-6">
-                <a
-                  href={socialLinks.whatsapp}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-[#25D366] text-white text-sm font-semibold py-2 shadow hover:opacity-95 transition"
-                >
-                  <FaWhatsapp /> WhatsApp Us
-                </a>
-              </div>
+            <div className="mt-6">
+  <a
+    href="https://wa.me/919540457075"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-[#25D366] text-white text-sm font-semibold py-2 shadow hover:opacity-95 transition"
+  >
+    <FaWhatsapp /> WhatsApp Us
+  </a>
+</div>
+
 
               {/* Mobile Extra Info */}
               <div className="mt-4 rounded-xl border border-[#D9D9D9] bg-gradient-to-r from-[#F9FAFB] to-white p-3 text-xs text-[#003366]">

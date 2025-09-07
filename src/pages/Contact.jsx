@@ -28,7 +28,7 @@ const Contact = () => {
     <div className="space-y-2 text-sm sm:text-base">
       <div>
         <h4 className="font-semibold text-red-800">Owner</h4>
-        <p className=" font-bold text-xl">Manoj Vats</p>
+        <p className=" font-bold text-xl">-</p>
 
       </div>
 

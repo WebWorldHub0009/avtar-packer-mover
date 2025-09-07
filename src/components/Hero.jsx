@@ -5,10 +5,11 @@ import { FiSearch, FiPackage, FiTruck, FiHome, FiBox } from "react-icons/fi";
 import baseImage from "../assets/home/car.jpg";
 
 // Packer Mover related images
-import localMove from "../assets/home/h3.jpg";
+import localMove from "../assets/home/av12.jpg";
 import officeMove from "../assets/home/ah4.jpeg";
 import houseShift from "../assets/home/ah5.jpg";
 import carTransport from "../assets/home/car.jpg";
+import { FaPhone } from "react-icons/fa";
 
 const slides = [
   {
@@ -19,6 +20,7 @@ const slides = [
     rightSubtitle: "Quick & Hassle-Free",
     icon: <FiHome />,
     img: localMove || baseImage,
+    phone: "+91 9773760041",   // ✅ Added
   },
   {
     id: 2,
@@ -28,6 +30,7 @@ const slides = [
     rightSubtitle: "Professional Handling",
     icon: <FiPackage />,
     img: officeMove || baseImage,
+    phone: "+91 9773760042",   // ✅ Added
   },
   {
     id: 3,
@@ -37,6 +40,7 @@ const slides = [
     rightSubtitle: "All India Service",
     icon: <FiTruck />,
     img: houseShift || baseImage,
+    phone: "+91 9540457075",   // ✅ Added
   },
   {
     id: 4,
@@ -46,8 +50,10 @@ const slides = [
     rightSubtitle: "Nationwide Service",
     icon: <FiBox />,
     img: carTransport || baseImage,
+    // no phone here
   },
 ];
+
 
 const HeroSection = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -186,9 +192,31 @@ const HeroSection = () => {
         <h2 className="text-sm md:text-xl font-light mb-2 text-red-800">
           {activeSlide.rightSubtitle}
         </h2>
-        <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white drop-shadow-lg">
+        <h1 className="text-4xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white drop-shadow-lg">
           {activeSlide.rightTitle}
         </h1>
+          {/* Show phone if available */}
+ {activeSlide.phone && (
+  <a
+    href={`tel:${activeSlide.phone.replace(/\s+/g, "")}`}
+    className="group mt-2 inline-flex items-center gap-3 text-lg md:text-xl font-semibold text-white px-6 py-3  relative overflow-hidden"
+  >
+    {/* Pulsing circle behind icon */}
+    <span className="absolute left-3 w-10 h-10 rounded-full bg-red-700 opacity-30 animate-ping"></span>
+
+    {/* Phone Icon */}
+    <span className="relative z-10 flex items-center justify-center w-10 h-10 rounded-full bg-red-800 group-hover:bg-red-700 transition">
+      <FaPhone/>
+    </span>
+
+    {/* Phone Number */}
+    <span className="relative z-10 group-hover:text-red-200 transition">
+      {activeSlide.phone}
+    </span>
+  </a>
+)}
+
+
 
         {/* 🔍 Search box */}
         <div className="relative mt-6 w-full max-w-xs sm:max-w-sm md:max-w-md mx-auto lg:ml-auto">
@@ -227,7 +255,7 @@ const HeroSection = () => {
       </div>
 
       {/* 📱 MOBILE CENTER PREMIUM CONTENT */}
-      <div className="absolute inset-x-0 top-58 flex justify-center items-center sm:top-36 text-center px-6 block lg:hidden">
+      <div className="absolute inset-x-0 top-72 flex justify-center items-center sm:top-36 text-center px-6 block lg:hidden">
         <motion.div
           key={activeSlide.id}
           initial={{ opacity: 0, y: 30, scale: 0.95 }}
