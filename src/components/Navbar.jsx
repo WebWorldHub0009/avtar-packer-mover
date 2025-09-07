@@ -17,7 +17,6 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
-import logo from "../assets/alogo.png";
 import logo2 from "../assets/avlogo.png";
 
 const navItemsLeft = [
@@ -56,22 +55,39 @@ const ModernNavbar = () => {
   }, [isMenuOpen]);
 
   const navLinkClasses = (path) =>
-    `cursor-pointer transition flex items-center gap-1 hover:text-[#FFC107] ${
+    `cursor-pointer transition flex items-center gap-1 hover:text-red-800 ${
       pathname === path ? "text-[#003366] font-semibold" : "text-[#1C1C1C]"
     }`;
 
   return (
     <>
-      {/* Top Header — desktop only */}
-      <div className="hidden md:block bg-[#003366] text-white text-xs md:text-sm py-2 px-4 md:px-12 font-sans">
-        <div className="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-3">
-          <p className="flex items-center gap-2">📞 +91 97737 60041</p>
-          <p className="flex items-center gap-2">🧾 GSTIN/UIN: 09CZMPS9024H1ZQ</p>
+      {/* ✅ Slim Top Header */}
+      <div className="w-full bg-gradient-to-r from-[#002244] via-[#003366] to-[#004080] text-white font-sans">
+        <div className="max-w-7xl mx-auto flex items-center justify-between py-1 px-4 text-xs md:text-sm">
+          {/* Left: Number */}
+          <p className="flex items-center gap-2">
+            📞 <a href="tel:+919773760041" className="hover:underline">+91 97737 60041</a>
+          </p>
+
+          {/* Right: Email */}
+          <a
+            href="mailto:info@avatarpackers.com"
+            className="flex items-center gap-2 hover:underline"
+          >
+            ✉️ info@avatarpackers.com
+          </a>
+        </div>
+
+        {/* ✅ Extra Info only on Desktop */}
+        <div className="hidden md:flex max-w-7xl mx-auto items-center justify-between px-4 pb-1 text-xs">
+          <p className="flex items-center gap-2">
+            🧾 GSTIN/UIN: <span className="font-semibold">09CZMPS9024H1ZQ</span>
+          </p>
           <p className="flex items-center gap-2">🏢 UDYAM-UP-28-0107517</p>
         </div>
       </div>
 
-      {/* Main Navbar */}
+      {/* ✅ Main Navbar */}
       <nav className="w-full px-4 md:px-12 py-2 bg-white shadow-md relative z-50">
         <div className="max-w-7xl mx-auto flex justify-between items-center relative">
           {/* Left Items */}
@@ -89,9 +105,9 @@ const ModernNavbar = () => {
           {/* Center Logo */}
           <Link to="/" className="flex items-center gap-2">
             <img
-              src={logo}
+              src={logo2}
               alt="Avatar Packers and Movers Logo"
-              className="h-10 md:h-14 object-cover"
+              className="h-14 md:h-18 object-cover"
             />
           </Link>
 
@@ -116,7 +132,7 @@ const ModernNavbar = () => {
                   href={url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-[#FFC107]"
+                  className="hover:text-red-800"
                 >
                   {React.createElement(
                     {
@@ -141,7 +157,7 @@ const ModernNavbar = () => {
           </div>
         </div>
 
-        {/* Mobile Panel */}
+        {/* ✅ Mobile Panel */}
         {isMenuOpen && (
           <div className="fixed inset-0 z-50 flex">
             {/* Slide-out */}
@@ -197,7 +213,7 @@ const ModernNavbar = () => {
                 </a>
               </div>
 
-              {/* Mobile Top Header Info */}
+              {/* Mobile Extra Info */}
               <div className="mt-4 rounded-xl border border-[#D9D9D9] bg-gradient-to-r from-[#F9FAFB] to-white p-3 text-xs text-[#003366]">
                 <p>📞 +91 97737 60041</p>
                 <p>🧾 GSTIN/UIN: 09CZMPS9024H1ZQ</p>
@@ -213,7 +229,7 @@ const ModernNavbar = () => {
                       href={url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="hover:text-[#FFC107]"
+                      className="hover:text-red-800"
                     >
                       {React.createElement(
                         {

@@ -101,7 +101,7 @@ const ServicePage = () => {
           transition={{ duration: 0.8 }}
           className="space-y-6"
         >
-          <h2 className="text-3xl md:text-4xl font-bold flex items-center gap-3 text-yellow-500">
+          <h2 className="text-3xl md:text-4xl font-bold flex items-center gap-3 text-red-800">
             <FaBoxOpen className="animate-bounce" /> Quick Highlights
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -111,7 +111,7 @@ const ServicePage = () => {
                 whileHover={{ scale: 1.05, rotate: 1 }}
                 className="bg-white shadow-md p-4 rounded-2xl flex items-center gap-3 hover:bg-yellow-100 cursor-pointer transition duration-300"
               >
-                <FaAngleRight className="text-yellow-500" />
+                <FaAngleRight className="text-red-800" />
                 <p className="text-gray-900 font-medium">{point}</p>
               </motion.div>
             ))}

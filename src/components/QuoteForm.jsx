@@ -18,7 +18,7 @@ export default function QuoteForm() {
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 shadow-2xl rounded-3xl overflow-hidden">
         {/* Left Column - Info */}
         <div className="bg-gradient-to-br from-[#002244] via-[#003366] to-[#004080] p-8 sm:p-10 lg:p-12 flex flex-col justify-center">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#FFC107] mb-6 leading-snug">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-red-800 mb-6 leading-snug">
             Get Your Free Moving Quote
           </h2>
           <p className="text-gray-200 text-base sm:text-lg italic mb-8">
@@ -27,19 +27,19 @@ export default function QuoteForm() {
 
           <ul className="space-y-4 sm:space-y-5 text-gray-100 text-sm sm:text-base">
             <li className="flex items-start space-x-3">
-              <FaShieldAlt className="text-[#FFC107] text-lg sm:text-xl mt-1" />
+              <FaShieldAlt className="text-red-800 text-lg sm:text-xl mt-1" />
               <span>Trusted and Secured Relocation Services</span>
             </li>
             <li className="flex items-start space-x-3">
-              <FaClock className="text-[#FFC107] text-lg sm:text-xl mt-1" />
+              <FaClock className="text-red-800 text-lg sm:text-xl mt-1" />
               <span>On-Time Pickup & Delivery</span>
             </li>
             <li className="flex items-start space-x-3">
-              <FaSmile className="text-[#FFC107] text-lg sm:text-xl mt-1" />
+              <FaSmile className="text-red-800 text-lg sm:text-xl mt-1" />
               <span>Professional & Friendly Team</span>
             </li>
             <li className="flex items-start space-x-3">
-              <FaCheckCircle className="text-[#FFC107] text-lg sm:text-xl mt-1" />
+              <FaCheckCircle className="text-red-800 text-lg sm:text-xl mt-1" />
               <span>Affordable Pricing with No Hidden Charges</span>
             </li>
           </ul>
@@ -156,7 +156,7 @@ export default function QuoteForm() {
             <div className="text-center">
               <button
                 type="submit"
-                className="w-full sm:w-auto px-8 sm:px-10 py-3 cursor-pointer bg-gradient-to-r from-[#FFC107] to-[#FFD54F] text-black font-semibold text-base sm:text-lg 
+                className="w-full sm:w-auto px-8 sm:px-10 py-3 cursor-pointer bg-black text-white font-semibold text-base sm:text-lg 
                            rounded-2xl shadow-lg hover:scale-105 hover:shadow-xl transition-all duration-300"
               >
                 Submit Request

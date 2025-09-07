@@ -22,7 +22,7 @@ export default function Hero() {
       <div className="relative z-10 flex flex-col items-center justify-center text-center h-full px-6">
         <h1 className="text-4xl md:text-6xl font-extrabold leading-tight max-w-4xl">
           Experience{" "}
-          <span className="text-[#003366]">Premium Relocation</span> Services
+          <span className="text-red-800">Premium Relocation</span> Services
           with Avatar Packers And Movers
         </h1>
 
@@ -37,7 +37,7 @@ export default function Hero() {
   {/* Email Now Button */}
   <a
     href="mailto:Info@avatarpackersandmovers.com"
-    className="px-8 py-3 cursor-pointer rounded-xl bg-[#FFC107] text-[#003366] font-semibold shadow-lg hover:bg-yellow-500 transition"
+    className="px-8 py-3 cursor-pointer rounded-xl bg-black text-white transition"
   >
     Email Now
   </a>
@@ -45,7 +45,7 @@ export default function Hero() {
   {/* Call Now Button */}
   <a
     href="tel:+919773760042"
-    className="px-8 py-3 cursor-pointer rounded-xl border border-white font-semibold flex items-center gap-2 hover:bg-white hover:text-[#003366] transition"
+    className="px-8 py-3 cursor-pointer rounded-xl border border-white font-semibold flex items-center gap-2 hover:bg-white hover:text-black transition"
   >
     <FaPhoneAlt /> Call Now
   </a>

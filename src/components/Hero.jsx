@@ -146,7 +146,7 @@ const HeroSection = () => {
                     onClick={() => handleSlideClick(i)}
                   >
                     {isActive && (
-                      <span className="absolute -left-6 top-0 bottom-0 w-1 rounded bg-gradient-to-b from-yellow-400 to-yellow-500" />
+                      <span className="absolute -left-6 top-0 bottom-0 w-1 rounded bg-red-800" />
                     )}
                     <p
                       className={`text-sm mb-1 ${
@@ -183,7 +183,7 @@ const HeroSection = () => {
 
       {/* RIGHT CONTENT */}
       <div className="absolute inset-x-0 top-24 md:top-1/2 md:right-24 md:inset-x-auto md:-translate-y-1/2 text-white px-6 text-center lg:text-right">
-        <h2 className="text-sm md:text-xl font-light mb-2 text-yellow-300">
+        <h2 className="text-sm md:text-xl font-light mb-2 text-red-800">
           {activeSlide.rightSubtitle}
         </h2>
         <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white drop-shadow-lg">
@@ -237,7 +237,7 @@ const HeroSection = () => {
           className=" px-6 py-6 max-w-sm mx-auto"
         >
           <div className="flex flex-col items-center space-y-3">
-            <div className="text-yellow-400 text-3xl">{activeSlide.icon}</div>
+            <div className="text-red-800 text-3xl">{activeSlide.icon}</div>
            
             <p className=" text-gray-100 opacity-90 text-2xl leading-relaxed">
               {activeSlide.subtitle}
@@ -255,7 +255,7 @@ const HeroSection = () => {
               onClick={() => handleSlideClick(i)}
               className={`flex-shrink-0 flex items-center gap-2 px-4 py-2 rounded-full text-xs sm:text-sm transition shadow-md ${
                 i === activeIndex
-                  ? "bg-yellow-400 text-black font-semibold shadow-lg scale-105"
+                  ? "text-red-800 text-black font-semibold shadow-lg scale-105"
                   : "bg-white/20 text-white/80 hover:bg-white/30"
               }`}
             >

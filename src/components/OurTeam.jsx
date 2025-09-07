@@ -46,7 +46,7 @@ export default function OurTeam() {
         {/* Heading */}
         <motion.h4
           variants={itemVariants}
-          className="text-[#FFC107] font-semibold mb-2 text-sm uppercase tracking-wide"
+          className="text-red-800 font-semibold mb-2 text-sm uppercase tracking-wide"
         >
           Strong Leadership
         </motion.h4>
@@ -63,7 +63,7 @@ export default function OurTeam() {
           className="text-gray-300 max-w-3xl mx-auto mb-5 text-lg"
         >
           The driving force behind{" "}
-          <span className="text-[#FFC107] font-semibold">
+          <span className="text-red-800 font-semibold">
             Avatar Packers And Movers
           </span>{" "}
           — experienced leaders who ensure trust, reliability, and excellence
@@ -76,12 +76,12 @@ export default function OurTeam() {
           className="flex flex-wrap justify-center gap-6 mb-6"
         >
           <Link to="/contact">
-            <button className="bg-gradient-to-r cursor-pointer from-[#FFC107] to-[#FF9800] text-[#1C1C1C] px-7 py-2 rounded-full  hover:opacity-90 transition text-lg shadow-lg">
+            <button className="bg-gradient-to-r cursor-pointer bg-black text-white px-7 py-2 rounded-full  hover:opacity-90 transition text-lg shadow-lg">
               Get in Touch
             </button>
           </Link>
           <Link to="/services">
-            <button className="border-2 cursor-pointer border-[#FFC107] text-[#FFC107] px-7 py-2 rounded-full  hover:bg-[#FFC107] hover:text-[#1C1C1C] transition text-lg shadow-lg">
+            <button className="border-2 cursor-pointer border-red-800 text-red-800 px-7 py-2 rounded-full transition text-lg shadow-lg">
               Explore Services
             </button>
           </Link>
@@ -128,13 +128,13 @@ function ProfileCard({ member }) {
     >
       <motion.div
         {...floatAnimation}
-        className="w-28 h-28 rounded-full border-2 border-[#FFC107] shadow-xl flex items-center justify-center bg-[#003366]/40"
+        className="w-28 h-28 rounded-full border-2 border-black shadow-xl flex items-center justify-center bg-[#003366]/40"
       >
-        <FaUserTie className="text-6xl text-[#FFC107]" />
+        <FaUserTie className="text-6xl text-red-800" />
       </motion.div>
       <h4 className="font-bold text-2xl text-white">{member.name}</h4>
       <p className="text-base text-gray-300">{member.position}</p>
-      <div className="flex gap-4 text-2xl text-gray-300 hover:text-[#FFC107] transition">
+      <div className="flex gap-4 text-2xl text-gray-300 hover:text-red-800 transition">
         <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
           <FaLinkedin />
         </a>

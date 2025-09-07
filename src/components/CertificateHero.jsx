@@ -21,12 +21,12 @@ const CertificateHero = () => {
           Certified Excellence
         </h1>
         <p className="mt-6 text-base md:text-xl text-gray-800 leading-relaxed">
-          <span className="font-semibold text-white">
+          <span className="font-semibold text-red-800">
             Avatar Packers And Movers
           </span>{" "}
           is backed by industry-recognized{" "}
-          <span className="text-[#FFD700] font-medium">certifications</span> and{" "}
-          <span className="text-[#FFD700] font-medium">licenses</span> that
+          <span className="text-red-800 font-medium">certifications</span> and{" "}
+          <span className="text-red-800 font-medium">licenses</span> that
           ensure every move is safe, reliable, and fully compliant.  
           Our dedication to{" "}
           <span className="italic">quality, transparency, and trust</span> has
@@ -47,7 +47,7 @@ const CertificateHero = () => {
             <a
               key={index}
               href="#"
-              className="relative text-[#003366]  hover:text-[#FFD700] whitespace-nowrap transition duration-300 group"
+              className="relative text-[#003366]  hover:text-red-800 whitespace-nowrap transition duration-300 group"
             >
               {item}
               <span className="absolute left-0 -bottom-1 w-0 h-[1px] bg-[#FFD700] transition-all duration-300 group-hover:w-full"></span>

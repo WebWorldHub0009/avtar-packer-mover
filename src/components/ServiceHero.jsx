@@ -22,11 +22,11 @@ const ServicesHero = () => {
         </h1>
         <p className="mt-6 text-base md:text-xl text-gray-200 leading-relaxed">
           With{" "}
-          <span className="text-[#FFD700] font-semibold">
+          <span className="text-red-800 font-semibold">
             Avatar Packers And Movers
           </span>
           , every relocation becomes a{" "}
-          <span className="text-[#FFD700]">premium experience</span>. From{" "}
+          <span className="text-red-800">premium experience</span>. From{" "}
           <span className="italic">household moves</span> to{" "}
           <span className="italic">corporate shifting</span> and{" "}
           <span className="italic">vehicle transport</span>, we combine safety,
@@ -49,7 +49,7 @@ const ServicesHero = () => {
             <a
               key={index}
               href="#"
-              className="relative text-[#010952] hover:text-[#FFD700] whitespace-nowrap transition duration-300 group"
+              className="relative text-[#010952] hover:text-red-800 whitespace-nowrap transition duration-300 group"
             >
               {item}
               <span className="absolute left-0 -bottom-1 w-0 h-[1px] bg-[#FFD700] transition-all duration-300 group-hover:w-full"></span>

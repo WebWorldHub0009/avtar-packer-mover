@@ -25,7 +25,7 @@ const AboutHero = () => {
         <h1 className="text-4xl md:text-6xl font-extrabold text-[#1C1C1C] leading-tight">
           <span className="text-[#003366]">Trusted Packers & Movers</span>{" "}
           <br />
-          <span className="text-[#FFC107]">for Every Relocation</span>
+          <span className="text-red-800">for Every Relocation</span>
         </h1>
 
         <p className="mt-6 text-lg md:text-xl text-white leading-relaxed max-w-2xl mx-auto">
@@ -34,7 +34,7 @@ const AboutHero = () => {
             Avatar Packers And Movers
           </span>
           , we specialize in delivering{" "}
-          <span className="text-[#FFC107] font-semibold">
+          <span className="text-red-800 font-semibold">
             safe, reliable, and hassle-free
           </span>{" "}
           relocation services. With years of experience and a trusted team, we
@@ -51,7 +51,7 @@ const AboutHero = () => {
           </Link>
           <Link
             to="/contact"
-            className="px-8 py-3 rounded-full bg-[#FFC107] text-black font-semibold shadow-md hover:shadow-lg hover:bg-yellow-400 transition"
+            className="px-8 py-3 rounded-full bg-black text-white  shadow-md hover:shadow-lg  transition"
           >
             Get a Quote
           </Link>

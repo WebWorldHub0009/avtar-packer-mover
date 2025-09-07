@@ -48,7 +48,7 @@ export default function TestimonialSlider() {
       {/* Heading */}
       <div className="relative max-w-7xl mx-auto text-center mb-14 z-10">
         <h2 className="text-3xl md:text-5xl font-extrabold text-[#003366] drop-shadow-sm">
-          What Our Clients <span className="text-[#FFC107]">Say About Us</span>
+          What Our Clients <span className="text-red-800">Say About Us</span>
         </h2>
         <p className="italic text-[#4A4A4A] mt-3 text-sm md:text-lg max-w-2xl mx-auto">
           “Trusted by families, businesses, and professionals across India for safe and premium relocation services.”
@@ -74,7 +74,7 @@ export default function TestimonialSlider() {
               className="rounded-2xl p-8 h-full bg-white shadow-md border border-[#003366]/10 
               text-[#1C1C1C] hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
             >
-              <FaQuoteLeft className="text-3xl mb-4 text-[#FFC107]" />
+              <FaQuoteLeft className="text-3xl mb-4 text-red-800" />
               <p className="mb-6 italic text-gray-700 leading-relaxed">
                 "{item.text}"
               </p>

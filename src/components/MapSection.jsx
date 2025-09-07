@@ -8,7 +8,7 @@ const MapSection = () => {
       {/* Left: Info */}
       <div className="w-full lg:w-1/2 flex items-center justify-center text-black p-10 md:p-14 relative overflow-hidden">
         <div className="relative z-10 max-w-lg">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#FFC107] mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-red-800 mb-4">
           Find Us On Map Avtar Packer & Mover
           </h2>
           <p className="text-gray-800 mb-6 text-lg leading-relaxed">

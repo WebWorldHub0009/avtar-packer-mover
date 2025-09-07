@@ -43,7 +43,7 @@ export default function MainAbout() {
       <div className="relative container mx-auto px-6 lg:px-20">
         {/* Heading */}
         <div className="text-center mb-8">
-          <h2 className="text-5xl font-extrabold text-[#003366] mb-4">
+          <h2 className="text-5xl font-extrabold text-black mb-4">
             About Avatar Packers And Movers
           </h2>
           <p className="text-lg sm:text-xl text-[#4A4A4A] font-medium max-w-2xl mx-auto">
@@ -56,16 +56,16 @@ export default function MainAbout() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-14 items-center mb-8">
           {/* Left Content */}
           <div>
-            <h3 className="text-4xl font-bold text-[#FFC107] mb-5">
+            <h3 className="text-4xl font-bold text-red-800 mb-5">
               Trusted Packers & Movers Across India
             </h3>
             <p className="text-gray-700 text-lg leading-relaxed mb-5">
               At{" "}
-              <span className="font-semibold text-[#003366]">
+              <span className="font-semibold text-black">
                 Avatar Packers And Movers
               </span>
               , we specialize in providing{" "}
-              <span className="font-semibold text-[#FFC107]">
+              <span className="font-semibold text-red-800">
                 safe, seamless, and stress-free
               </span>{" "}
               relocation services. From household moves to office shifting and
@@ -88,7 +88,7 @@ export default function MainAbout() {
               />
               {/* Golden Overlay Badge */}
               <div className="absolute bottom-4 left-4 bg-[#003366] text-white px-6 py-3 rounded-xl shadow-lg">
-                <span className="text-2xl font-bold text-[#FFC107]">13+</span>{" "}
+                <span className="text-2xl font-bold text-red-800">13+</span>{" "}
                 Years of Excellence
               </div>
             </div>
@@ -102,10 +102,10 @@ export default function MainAbout() {
               key={idx}
               className="bg-white rounded-2xl shadow-md hover:shadow-xl p-8 text-center border-t-4 border-[#003366] transition-all duration-300"
             >
-              <div className="flex justify-center items-center mb-4 text-4xl text-[#FFC107]">
+              <div className="flex justify-center items-center mb-4 text-4xl text-red-800">
                 {item.icon}
               </div>
-              <h4 className="text-lg font-semibold text-[#003366] mb-2">
+              <h4 className="text-lg font-semibold text-black mb-2">
                 {item.title}
               </h4>
               <p className="text-gray-600 text-sm">{item.desc}</p>

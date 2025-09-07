@@ -11,7 +11,7 @@ import bgImage from "../assets/home/abg.jpg"; // Replace with a premium moving-r
 
 const faqCategories = {
   "Moving Basics": {
-    icon: <FaTruckMoving className="text-[#FFC107] text-xl" />,
+    icon: <FaTruckMoving className="text-red-800 text-xl" />,
     faqs: [
       {
         question: "What types of moves do you handle?",
@@ -31,7 +31,7 @@ const faqCategories = {
     ],
   },
   "Services & Coverage": {
-    icon: <FaMapMarkedAlt className="text-[#FFC107] text-xl" />,
+    icon: <FaMapMarkedAlt className="text-red-800 text-xl" />,
     faqs: [
       {
         question: "Which areas do you serve?",
@@ -51,7 +51,7 @@ const faqCategories = {
     ],
   },
   "Process & Pricing": {
-    icon: <FaBoxOpen className="text-[#FFC107] text-xl" />,
+    icon: <FaBoxOpen className="text-red-800 text-xl" />,
     faqs: [
       {
         question: "How does your moving process work?",
@@ -71,7 +71,7 @@ const faqCategories = {
     ],
   },
   "Support & Booking": {
-    icon: <FaPhoneAlt className="text-[#FFC107] text-xl" />,
+    icon: <FaPhoneAlt className="text-red-800 text-xl" />,
     faqs: [
       {
         question: "How can I book your services?",
@@ -117,7 +117,7 @@ const FAQ = () => {
           </h2>
           <p className="text-gray-300 max-w-2xl mx-auto text-sm sm:text-base">
             Get answers about{" "}
-            <span className="text-[#FFC107] font-semibold">
+            <span className="text-red-800 font-semibold">
               Avatar Packers And Movers
             </span>{" "}
             services, process, and support.
@@ -134,7 +134,7 @@ const FAQ = () => {
                 whileTap={{ scale: 0.97 }}
                 className={`text-left w-full px-5 py-4 rounded-xl flex items-center gap-3 font-semibold text-sm md:text-base transition-all duration-300 shadow-sm ${
                   activeTab === category
-                    ? "bg-gradient-to-r from-[#FFC107] to-[#FF9800] text-[#1C1C1C] shadow-lg"
+                    ? "bg-white text-[#1C1C1C] shadow-lg"
                     : "bg-white/10 text-white hover:bg-white/20"
                 }`}
               >
@@ -163,7 +163,7 @@ const FAQ = () => {
                       }
                     >
                       {faq.question}
-                      <span className="text-[#FFC107] text-2xl font-bold">
+                      <span className="text-red-800 text-2xl font-bold">
                         {openIndex === index ? "−" : "+"}
                       </span>
                     </button>

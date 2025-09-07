@@ -54,7 +54,7 @@ export default function Footer() {
                 className="w-16 h-16 md:w-20 md:h-20 rounded-full shadow-md"
               />
             </div>
-            <p className="text-2xl md:text-4xl font-semibold text-[#FFC107] tracking-wide">
+            <p className="text-2xl md:text-4xl font-semibold text-red-800 tracking-wide">
               Avatar Packers & Movers
             </p>
           </div>
@@ -80,7 +80,7 @@ export default function Footer() {
                 href={url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#FFC107] hover:text-black transition duration-300"
+                className="text-red-800 hover:text-black transition duration-300"
               >
                 <Icon size={22} />
               </a>
@@ -90,7 +90,7 @@ export default function Footer() {
           <div className="mt-4">
             <a
               href="mailto:Info@avatarpackersandmovers.com"
-              className="inline-flex items-center gap-2 bg-[#FFC107] text-[#1C1C1C] px-4 py-2 rounded-lg font-semibold hover:bg-white transition duration-300"
+              className="inline-flex items-center gap-2 bg-black text-white px-4 py-2 rounded-lg font-semibold hover:bg-white transition duration-300"
             >
               <FaEnvelope /> Email Us
             </a>
@@ -99,7 +99,7 @@ export default function Footer() {
 
         {/* Quick Links */}
         <div>
-          <h4 className="font-semibold text-3xl mb-4 text-[#FFC107]">
+          <h4 className="font-semibold text-3xl mb-4 text-red-800">
             Quick Links
           </h4>
           <ul className="space-y-3">
@@ -113,7 +113,7 @@ export default function Footer() {
               <li key={i}>
                 <Link
                   to={link}
-                  className="flex items-center gap-2 text-black hover:text-[#FFC107] transition duration-300"
+                  className="flex items-center gap-2 text-black hover:text-red-800 transition duration-300"
                 >
                   {icon} {text}
                 </Link>
@@ -121,7 +121,7 @@ export default function Footer() {
             ))}
           </ul>
 
-          <h4 className="font-semibold text-3xl mt-6 mb-2 text-[#FFC107]">
+          <h4 className="font-semibold text-3xl mt-6 mb-2 text-red-800">
             Business Info
           </h4>
           <ul className="space-y-2 text-black">
@@ -133,16 +133,16 @@ export default function Footer() {
 
         {/* Services */}
         <div>
-          <h4 className="font-semibold text-3xl mb-4 text-[#FFC107]">
+          <h4 className="font-semibold text-3xl mb-4 text-red-800">
             Our Services
           </h4>
           <ul className="space-y-3">
             {services.map(({ title, slug }, i) => (
               <li key={i} className="flex items-center gap-2">
-                <FaTruckMoving className="text-[#FFC107]" />
+                <FaTruckMoving className="text-red-800" />
                 <Link
                   to={`/services/${slug}`}
-                  className="text-black hover:text-[#FFC107] transition duration-300"
+                  className="text-black hover:text-red-800 transition duration-300"
                 >
                   {title}
                 </Link>
@@ -153,7 +153,7 @@ export default function Footer() {
 
         {/* Contact Info */}
         <div>
-          <h4 className="font-semibold text-3xl mb-4 text-[#FFC107]">
+          <h4 className="font-semibold text-3xl mb-4 text-red-800">
             Contact Info
           </h4>
           <address className="not-italic leading-relaxed mb-4 text-black">
@@ -162,12 +162,12 @@ export default function Footer() {
           </address>
 
           <p className="text-sm mb-2 flex items-center gap-2">
-            <FaPhoneAlt className="text-[#FFC107]" /> Owner: Manoj Vats
+            <FaPhoneAlt className="text-red-800" /> Owner: Manoj Vats
           </p>
           {["+91 9773760041", "+91 9773760042", "+91 9540457075"].map(
             (num, i) => (
               <p key={i} className="text-sm mb-2 flex items-center gap-2">
-                <FaPhoneAlt className="text-[#FFC107]" />
+                <FaPhoneAlt className="text-red-800" />
                 <a
                   href={`tel:${num.replace(/\s/g, "")}`}
                   className="hover:text-black transition duration-300"
@@ -199,7 +199,7 @@ export default function Footer() {
             href="https://webworldhub.co.in"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-semibold hover:text-[#FFC107] transition duration-300"
+            className="font-semibold hover:text-red-800 transition duration-300"
           >
             Web World Hub
           </a>

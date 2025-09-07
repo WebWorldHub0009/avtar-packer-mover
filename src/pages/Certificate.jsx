@@ -48,7 +48,7 @@ const CertificatePage = () => {
           {/* Page Title */}
           <div className="text-center mb-16" id="docs">
             <h1 className="text-4xl md:text-5xl font-bold font-serif text-gray-900 uppercase tracking-wide">
-              Verified <span className="text-[#FFD700]">Certificates</span>
+              Verified <span className="text-red-800">Certificates</span>
             </h1>
             <p className="mt-4 text-lg text-gray-700 max-w-3xl mx-auto">
               At{" "}
@@ -56,7 +56,7 @@ const CertificatePage = () => {
                 Avtar Packer & Mover
               </span>
               , transparency is our foundation. Explore our{" "}
-              <span className="text-[#FFD700] font-semibold">
+              <span className="text-red-800 font-semibold">
                 official documents
               </span>{" "}
               that validate our authenticity, compliance, and premium service
@@ -116,7 +116,7 @@ const CertificatePage = () => {
       <section className="relative bg-gradient-to-r from-[#010952] via-[#001F4D] to-[#010952] text-white py-20 px-6">
         <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-10 text-center">
           <div className="flex flex-col items-center">
-            <FaShieldAlt className="text-[#FFD700] text-5xl mb-4" />
+            <FaShieldAlt className="text-red-800 text-5xl mb-4" />
             <h3 className="text-xl font-bold">Government Approved</h3>
             <p className="mt-2 text-gray-300 text-sm">
               All our certificates are verified and approved by government

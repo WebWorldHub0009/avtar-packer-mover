@@ -14,7 +14,7 @@ const steps = [
     title: "Share Your Moving Details",
     description:
       "Tell us where you’re moving from and to, along with your preferred date. We’ll tailor the service to your exact needs.",
-    icon: <FaClipboardCheck className="text-4xl text-[#FFC107]" />,
+    icon: <FaClipboardCheck className="text-4xl text-red-800" />,
     extra: "Getting started is quick and hassle-free.",
   },
   {
@@ -22,7 +22,7 @@ const steps = [
     title: "Get a Customized Plan",
     description:
       "Our experts assess your requirements and offer you the most reliable, affordable, and stress-free moving plan.",
-    icon: <FaTruckMoving className="text-4xl text-[#FFC107]" />,
+    icon: <FaTruckMoving className="text-4xl text-red-800" />,
     extra: "Every move is customized for your convenience.",
   },
   {
@@ -30,7 +30,7 @@ const steps = [
     title: "Book in Just Minutes",
     description:
       "Confirm your plan online with ease. Receive instant booking confirmation via WhatsApp, SMS, or Email.",
-    icon: <FaCalendarCheck className="text-4xl text-[#FFC107]" />,
+    icon: <FaCalendarCheck className="text-4xl text-red-800" />,
     extra: "No paperwork. Instant, digital confirmation.",
   },
   {
@@ -38,7 +38,7 @@ const steps = [
     title: "Enjoy a Smooth Move",
     description:
       "Sit back and relax while our professional team carefully packs, transports, and sets up your belongings safely.",
-    icon: <FaSmileBeam className="text-4xl text-[#FFC107]" />,
+    icon: <FaSmileBeam className="text-4xl text-red-800" />,
     extra: "Safe. Reliable. On-Time. Every time.",
   },
 ];
@@ -48,7 +48,7 @@ const HowItWorks = () => {
     <section className="py-8 bg-gradient-to-b from-[#f9fafc] to-[#eaf1f8] relative">
       {/* Header */}
       <div className="text-center mb-8 relative z-10">
-        <p className="text-sm font-semibold text-[#003366] uppercase tracking-widest">
+        <p className="text-sm font-semibold text-black uppercase tracking-widest">
           Avatar Packers And Movers
         </p>
         <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 drop-shadow-sm">
@@ -71,7 +71,7 @@ const HowItWorks = () => {
             {/* Number Badge */}
             <div className="absolute -top-6 left-1/2 -translate-x-1/2">
               <div className="w-14 h-14 flex items-center justify-center rounded-full bg-white border-2 border-[#003366] 
-                              text-[#003366] font-bold text-base group-hover:bg-[#003366] group-hover:text-white transition-all duration-500">
+                              text-black font-bold text-base group-hover:bg-[#003366] group-hover:text-white transition-all duration-500">
                 <span className="group-hover:hidden">{idx + 1}</span>
                 <FaCheck className="hidden group-hover:block text-white text-sm" />
               </div>
@@ -99,7 +99,7 @@ const HowItWorks = () => {
             <div className="absolute bottom-6 left-1/2 -translate-x-1/2 w-full px-6">
               <div className="opacity-0 translate-y-2 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 ease-in-out">
                 <Link to="/contact">
-                  <button className="w-full cursor-pointer rounded-full bg-gradient-to-r from-[#FFC107] to-[#FFD54F] text-black text-sm py-2 font-semibold shadow-md hover:shadow-xl transition">
+                  <button className="w-full cursor-pointer rounded-full bg-red-800 text-black text-sm py-2 font-semibold shadow-md hover:shadow-xl transition">
                     Learn More
                   </button>
                 </Link>
@@ -116,7 +116,7 @@ const HowItWorks = () => {
           relocation is seamless and stress-free.
         </p>
         <Link to="/contact">
-          <button className="bg-gradient-to-r from-[#003366] to-[#004080] cursor-pointer text-white px-8 py-3 rounded-2xl text-lg  shadow-lg hover:scale-105 hover:shadow-2xl transition duration-300">
+          <button className="bg-black cursor-pointer text-white px-8 py-3 rounded-2xl text-lg  shadow-lg hover:scale-105 hover:shadow-2xl transition duration-300">
             Book Your Move Today
           </button>
         </Link>

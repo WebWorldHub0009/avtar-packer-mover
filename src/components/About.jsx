@@ -12,11 +12,11 @@ export default function AboutSection() {
         {/* Left Content */}
         <div className="space-y-6">
           <h2 className="text-4xl pl-3 md:text-5xl font-bold font-[Poppins] text-[#1A365D] leading-snug">
-            Moving Made Easy, <br /> With <span className="text-[#FFC107]">Avatar Packers And Movers</span>
+            Moving Made Easy, <br /> With <span className="text-red-800">Avatar Packers And Movers</span>
           </h2>
 
           <p className="text-gray-600 text-lg px-4">
-            At <span className="font-semibold text-[#FFC107]">Avatar Packers And Movers</span>, 
+            At <span className="font-semibold text-red-800">Avatar Packers And Movers</span>, 
             we ensure your relocation is smooth, secure, and stress-free. 
             With premium packing, safe transport, and reliable professionals, 
             we handle every move with care—whether it’s local shifting, office relocation, 
@@ -49,7 +49,7 @@ export default function AboutSection() {
 
             {/* Feature 3 */}
             <div className="flex flex-col items-center group">
-              <div className="w-12 h-12 flex items-center justify-center rounded-full bg-[#FEE2E2] text-[#FFC107] mb-3 group-hover:scale-110 transition">
+              <div className="w-12 h-12 flex items-center justify-center rounded-full bg-[#FEE2E2] text-red-800 mb-3 group-hover:scale-110 transition">
                 <FiTruck className="text-xl" />
               </div>
               <h3 className="text-base font-semibold text-[#1A365D]">On-Time Delivery</h3>
@@ -91,7 +91,7 @@ export default function AboutSection() {
       {/* Highlight Text Below */}
       <div className="text-center mt-14 max-w-4xl mx-auto">
         <p className="text-lg text-gray-700 leading-relaxed">
-          <span className="text-[#FFC107] font-semibold"> Avatar Packers And Movers </span> 
+          <span className="text-red-800 font-semibold"> Avatar Packers And Movers </span> 
           is a name synonymous with trust, efficiency, and premium relocation services. 
           From careful packing to safe transportation, we bring peace of mind to 
           thousands of families and businesses nationwide.
