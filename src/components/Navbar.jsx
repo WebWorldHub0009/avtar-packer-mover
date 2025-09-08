@@ -79,7 +79,7 @@ const ModernNavbar = () => {
         </div>
 
         {/* ✅ Extra Info only on Desktop */}
-        <div className="hidden md:flex max-w-7xl mx-auto items-center justify-between px-4 pb-1 text-xs">
+        <div className="hidden md:flex max-w-7xl mx-auto items-center justify-between px-4 pb-1 text-xs md:text-sm">
           <p className="flex items-center gap-2">
             🧾 GSTIN/UIN: <span className="font-semibold">09CZMPS9024H1ZQ</span>
           </p>
@@ -103,13 +103,18 @@ const ModernNavbar = () => {
           </ul>
 
           {/* Center Logo */}
-          <Link to="/" className="flex items-center gap-2">
-            <img
-              src={logo2}
-              alt="Avatar Packers and Movers Logo"
-              className="h-14 md:h-18 object-cover"
-            />
-          </Link>
+         {/* Center Logo with Text */}
+<Link to="/" className="flex items-center gap-3">
+  <img
+    src={logo2}
+    alt="Avatar Packers and Movers Logo"
+    className="h-14 md:h-18 object-cover"
+  />
+  <span className="text-lg md:text-xl font-bold text-[#003366] tracking-wide">
+    Avatar <span className="text-red-700">Packers</span> & Movers
+  </span>
+</Link>
+
 
           {/* Right Items */}
           <div className="hidden md:flex items-center gap-6">

@@ -5,6 +5,7 @@ import About from '../components/About'
 import ServiceSection from "../components/ServiceSection"
 import QuoteForm from "../components/QuoteForm"
 import HowItWork from "../components/HowItWork"
+import RatesChargesPremium from '../components/RateChargesPremium'
 
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
    <WhyChooseUs/>
    <ServiceSection/>
    <HowItWork/>
+   <RatesChargesPremium/>
    <QuoteForm/>
    </>
   )

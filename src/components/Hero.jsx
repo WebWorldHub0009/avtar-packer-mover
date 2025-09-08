@@ -9,14 +9,14 @@ import localMove from "../assets/home/av12.jpg";
 import officeMove from "../assets/home/ah4.jpeg";
 import houseShift from "../assets/home/ah5.jpg";
 import carTransport from "../assets/home/car.jpg";
-import { FaPhone } from "react-icons/fa";
+import { FaPhone, FaPhoneAlt } from "react-icons/fa";
 
 const slides = [
   {
     id: 1,
     title: "Safe, Fast & Reliable",
     subtitle: "Trusted Packers & Movers for every shifting need",
-    rightTitle: "Local Shifting",
+    rightTitle: "For Shifting",
     rightSubtitle: "Quick & Hassle-Free",
     icon: <FiHome />,
     img: localMove || baseImage,
@@ -189,7 +189,7 @@ const HeroSection = () => {
 
       {/* RIGHT CONTENT */}
       <div className="absolute inset-x-0 top-24 md:top-1/2 md:right-24 md:inset-x-auto md:-translate-y-1/2 text-white px-6 text-center lg:text-right">
-        <h2 className="text-sm md:text-xl font-light mb-2 text-red-800">
+        <h2 className="text-sm md:text-xl font-light mb-2 text-white">
           {activeSlide.rightSubtitle}
         </h2>
         <h1 className="text-4xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white drop-shadow-lg">
@@ -202,15 +202,15 @@ const HeroSection = () => {
     className="group mt-2 inline-flex items-center gap-3 text-lg md:text-xl font-semibold text-white px-6 py-3  relative overflow-hidden"
   >
     {/* Pulsing circle behind icon */}
-    <span className="absolute left-3 w-10 h-10 rounded-full bg-red-700 opacity-30 animate-ping"></span>
+    <span className="absolute left-3 w-10 h-10 rounded-full bg-green-700 opacity-30 animate-ping"></span>
 
     {/* Phone Icon */}
-    <span className="relative z-10 flex items-center justify-center w-10 h-10 rounded-full bg-red-800 group-hover:bg-red-700 transition">
-      <FaPhone/>
+    <span className="relative z-10 flex items-center  justify-center w-10 h-10 rounded-full bg-green-800 group-hover:bg-green-900 transition">
+      <FaPhoneAlt/>
     </span>
 
     {/* Phone Number */}
-    <span className="relative z-10 group-hover:text-red-200 transition">
+    <span className="relative z-10 group-hover:text-gray-100 transition">
       {activeSlide.phone}
     </span>
   </a>
@@ -265,7 +265,7 @@ const HeroSection = () => {
           className=" px-6 py-6 max-w-sm mx-auto"
         >
           <div className="flex flex-col items-center space-y-3">
-            <div className="text-red-800 text-3xl">{activeSlide.icon}</div>
+            <div className="text-white text-3xl">{activeSlide.icon}</div>
            
             <p className=" text-gray-100 opacity-90 text-2xl leading-relaxed">
               {activeSlide.subtitle}
