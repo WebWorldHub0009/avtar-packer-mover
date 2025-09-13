@@ -111,11 +111,9 @@ const ModernNavbar = () => {
     className="h-14 md:h-18 object-cover"
   />
   <span className="text-lg md:text-xl font-extrabold text-[#000000] tracking-wide">
-    Avatar <span className="">Packers</span> & Movers
+    Avatar <span className="">Packers</span> And Movers
   </span>
 </Link>
-
-
           {/* Right Items */}
           <div className="hidden md:flex items-center gap-6">
             <ul className="flex gap-6 text-sm font-medium uppercase">
