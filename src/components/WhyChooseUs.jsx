@@ -1,6 +1,6 @@
 import React from "react";
 import why1 from "../assets/home/ah1.jpg"; // replace with moving images
-import why2 from "../assets/home/car.jpg";
+import why2 from "../assets/home/caar.jpeg";
 import bg from "../assets/home/abg.jpg"; // background image
 
 export default function WhyChooseUs() {

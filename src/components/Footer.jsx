@@ -87,14 +87,17 @@ export default function Footer() {
             ))}
           </div>
 
-          <div className="mt-4">
-            <a
-              href="mailto:Info@avatarpackersandmovers.com"
-              className="inline-flex items-center gap-2 bg-black text-white px-4 py-2 rounded-lg font-semibold hover:bg-white transition duration-300"
-            >
-              <FaEnvelope /> Email Us
-            </a>
-          </div>
+        <div className="mt-4">
+  <a
+    href="https://md-in-82.webhostbox.net:2096/cpsess3927650103/3rdparty/roundcube/?_task=mail&_mbox=INBOX"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center gap-2 bg-black text-white px-4 py-2 rounded-lg font-semibold hover:bg-white hover:text-black transition duration-300"
+  >
+    <FaEnvelope /> Webmail
+  </a>
+</div>
+
         </div>
 
         {/* Quick Links */}

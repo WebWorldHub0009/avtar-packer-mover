@@ -9,9 +9,9 @@ import "swiper/css/pagination";
 // ✅ Example Packer & Mover service images (replace with real images)
 import relocation from "../assets/service/relocation.jpg";
 import pack from "../assets/service/packing.jpg";
-import move from "../assets/service/movea.jpg";
-import car from "../assets/home/car.jpg";
-import cargo from "../assets/service/cargoa.jpg";
+import move from "../assets/home/mooov.jpeg";
+import car from "../assets/home/caar.jpeg";
+import cargo from "../assets/home/cargoo.jpeg";
 import commercial from "../assets/service/cmove.jpg";
 
 

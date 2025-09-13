@@ -112,7 +112,7 @@ export default function RatesChargesPremium() {
               className="bg-clip-text text-transparent"
               style={{ backgroundImage: `linear-gradient(90deg, ${COLORS.royal}, ${COLORS.gold})` }}
             >
-              Avatar Packers & Movers Pvt. Ltd.
+              Avatar Packers And Movers
             </span>
           </h2>
           <p className="mt-3 text-base md:text-lg font-medium" style={{ color: COLORS.black }}>

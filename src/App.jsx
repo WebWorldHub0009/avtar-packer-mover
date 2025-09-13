@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import FloatingButtons from "./components/FloatingButtons";
-import PopupForm from "./components/PopupForm";
+// import PopupForm from "./components/PopupForm";
 
 
 
@@ -22,7 +22,7 @@ const App = () => {
     <BrowserRouter>
       <ScrollToTop />
       <Navbar />
-      <PopupForm/>
+      {/* <PopupForm/> */}
       <Suspense
         fallback={
           <div className="flex justify-center items-center h-screen">

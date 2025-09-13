@@ -5,7 +5,7 @@ import { FiSearch, FiPackage, FiTruck, FiHome, FiBox } from "react-icons/fi";
 import baseImage from "../assets/home/car.jpg";
 
 // Packer Mover related images
-import localMove from "../assets/home/av12.jpg";
+import localMove from "../assets/home/shift.jpg";
 import officeMove from "../assets/home/ah4.jpeg";
 import houseShift from "../assets/home/ah5.jpg";
 import carTransport from "../assets/home/car.jpg";
@@ -283,7 +283,7 @@ const HeroSection = () => {
               onClick={() => handleSlideClick(i)}
               className={`flex-shrink-0 flex items-center gap-2 px-4 py-2 rounded-full text-xs sm:text-sm transition shadow-md ${
                 i === activeIndex
-                  ? "text-red-800 text-black font-semibold shadow-lg scale-105"
+                  ? "text-white text-black font-semibold shadow-lg scale-105"
                   : "bg-white/20 text-white/80 hover:bg-white/30"
               }`}
             >

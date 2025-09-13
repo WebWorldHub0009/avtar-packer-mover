@@ -110,7 +110,7 @@ const ModernNavbar = () => {
     alt="Avatar Packers and Movers Logo"
     className="h-14 md:h-18 object-cover"
   />
-  <span className="text-lg md:text-xl font-extrabold text-[#000000] tracking-wide">
+  <span className="text-lg  md:text-lg font-extrabold text-[#000000] ">
     Avatar <span className="">Packers</span> And Movers
   </span>
 </Link>
