@@ -191,7 +191,7 @@ export default function RatesChargesPremium() {
         {/* CTA */}
         <div className="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
           <a
-            href="#contact"
+            href="/contact"
             className="rounded-full px-6 py-3 font-semibold shadow-xl transition-transform hover:scale-105"
             style={{ background: `linear-gradient(90deg, ${COLORS.royal}, ${COLORS.gold})`, color: COLORS.black }}
           >

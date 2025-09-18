@@ -5,7 +5,7 @@ import { FiSearch, FiPackage, FiTruck, FiHome, FiBox } from "react-icons/fi";
 import baseImage from "../assets/home/car.jpg";
 
 // Packer Mover related images
-import localMove from "../assets/home/shift.jpg";
+import localMove from "../assets/home/an.jpg";
 import officeMove from "../assets/home/ah4.jpeg";
 import houseShift from "../assets/home/ah5.jpg";
 import carTransport from "../assets/home/car.jpg";

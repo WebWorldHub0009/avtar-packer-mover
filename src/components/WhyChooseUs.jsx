@@ -1,5 +1,5 @@
 import React from "react";
-import why1 from "../assets/home/ah1.jpg"; // replace with moving images
+import why1 from "../assets/home/pp.jpg"; // replace with moving images
 import why2 from "../assets/home/caar.jpeg";
 import bg from "../assets/home/abg.jpg"; // background image
 
@@ -26,7 +26,7 @@ export default function WhyChooseUs() {
             <img
               src={why1}
               alt="Safe & Reliable Shifting"
-              className="w-full h-[260px] sm:h-[300px] object-cover rounded-lg shadow-lg"
+              className="w-full h-[300px] sm:h-[350px] object-cover rounded-lg shadow-lg"
             />
           </div>
 
