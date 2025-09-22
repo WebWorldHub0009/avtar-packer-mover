@@ -5,6 +5,7 @@ import { FaTimes } from "react-icons/fa";
 const PopupForm = () => {
   const [show, setShow] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   // Show popup after 5 seconds
   useEffect(() => {
@@ -13,6 +14,31 @@ const PopupForm = () => {
   }, []);
 
   if (!show) return null;
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    const formData = new FormData(e.target);
+
+    try {
+      const response = await fetch("https://formsubmit.co/ajax/avatarpackers1@gmail.com", {
+        method: "POST",
+        body: formData,
+        headers: { Accept: "application/json" },
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+      } else {
+        alert("Submission failed. Please try again.");
+      }
+    } catch (err) {
+      alert("Submission failed. Please try again.");
+      console.error(err);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <div className="fixed inset-0 z-50 flex justify-end items-center bg-black/40 backdrop-blur-sm">
@@ -46,12 +72,7 @@ const PopupForm = () => {
               Our team will contact you shortly.
             </p>
           ) : (
-            <form
-              action="https://formsubmit.co/avatarpackers1@gmail.com"
-              method="POST"
-              onSubmit={() => setSubmitted(true)}
-              className="grid gap-3"
-            >
+            <form className="grid gap-3" onSubmit={handleSubmit}>
               {/* Hidden Fields */}
               <input type="hidden" name="_captcha" value="false" />
               <input
@@ -60,7 +81,7 @@ const PopupForm = () => {
                 value="https://www.avatarpackersandmovers.com/"
               />
 
-              {/* Fields */}
+              {/* Input Fields */}
               <input
                 type="text"
                 name="name"
@@ -88,6 +109,7 @@ const PopupForm = () => {
                 placeholder="Current Address"
                 className="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FFC107]"
               />
+
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <input
                   type="text"
@@ -104,6 +126,7 @@ const PopupForm = () => {
                   className="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FFC107]"
                 />
               </div>
+
               <input
                 type="date"
                 name="date"
@@ -114,9 +137,12 @@ const PopupForm = () => {
               {/* Submit Button */}
               <button
                 type="submit"
-                className="w-full py-2 rounded-lg font-bold text-white bg-[#003366] hover:bg-[#FFC107] hover:text-[#003366] transition duration-300 shadow-md"
+                disabled={loading}
+                className={`w-full py-2 rounded-lg font-bold text-white bg-[#003366] hover:bg-[#FFC107] hover:text-[#003366] transition duration-300 shadow-md ${
+                  loading ? "opacity-70 cursor-not-allowed" : ""
+                }`}
               >
-                Submit Details
+                {loading ? "Submitting..." : "Submit Details"}
               </button>
             </form>
           )}
